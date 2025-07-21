@@ -3,11 +3,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&?family=Big+Shoulders+Display:wght@400;600;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
-@import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207@1.1/Orbit.css');
+/* G마켓 산스 Bold (타이틀) */
+@import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2107@1.1/GmarketSansBold.css');
 
-html, body {
-  font-family: 'Orbit', sans-serif;
-}
+/* Noto Sans KR (UI/서브타이틀/라벨/강조) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap');
+
+/* Pretendard (본문 등 다용도) */
+@import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207@1.1/Pretendard.css');
+
+/* D2Coding (코드) */
+@import url('https://cdn.jsdelivr.net/gh/naver/d2coding-font@1.3.2/d2coding.css');
 
 /*-------------------------------------*/
 /*--       Theme Customization       --*/
@@ -106,8 +112,8 @@ header {
 	font-size: 32px;
 	margin: 0%;
 	align-self: center;
-	font-family: 'Orbit', sans-serif;
-	font-weight: 800;
+    font-family: 'GmarketSansBold', sans-serif !important;
+    font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 0.15em;
 }
@@ -116,8 +122,8 @@ header {
 	font-size: 32px;
 	margin: 0%;
 	align-self: center;
-	font-family: 'Orbit', sans-serif;
-	font-weight: 600;
+    font-family: 'GmarketSansBold', sans-serif !important;
+    font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 0.12em;
 	padding-left: 0.32em;
@@ -127,8 +133,8 @@ header {
 	font-size: 24px;
 	margin: 0%;
 	align-self: center;
-	font-family: 'Orbit', sans-serif;
-	font-weight: 600;
+    font-family: 'GmarketSansBold', sans-serif !important;
+    font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 0.08em;
 }
@@ -137,8 +143,8 @@ header {
 	font-size: 24px;
 	margin: 0%;
 	align-self: center;
-	font-family: 'Orbit', sans-serif;
-	font-weight: 700;
+    font-family: 'Pretendard', 'Noto Sans KR', sans-serif !important;
+    font-weight: 400; /* Regular */
 	text-transform: uppercase;
 	letter-spacing: 0.02em;
 }
@@ -217,9 +223,9 @@ div.location-info {
 .location-row h4 {
 	margin: 0px;
 	line-height: 1.5em;
-	font-family: 'Orbit', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif !important;
 	font-size: 10px;
-	font-weight: 800;
+	font-weight: 500; /* Medium */
 	text-transform: uppercase;
 	letter-spacing: 3px;
 }
@@ -228,8 +234,8 @@ div.location-info {
 	font-size: 18px;
 	margin: 0%;
 	align-self: center;
-	font-family: 'Orbit', sans-serif;
-	font-weight: 800;
+    font-family: 'GmarketSansBold', sans-serif !important;
+    font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 }
@@ -292,7 +298,8 @@ div.location-info {
 
 .sidebar-layout a,
 .sidebar-layout a:visited {
-	font-family: 'Orbit', sans-serif;
+    font-family: 'Noto Sans KR', 'Pretendard', sans-serif !important;
+    font-weight: 700; /* Bold */
 	letter-spacing: 0.5px;
 	text-transform: uppercase;
 	font-size: 12px;
@@ -307,7 +314,8 @@ div.location-info {
 }
 
 .sidebar-layout a.router-link-exact-active {
-	font-family: 'Orbit', sans-serif;
+    font-family: 'Noto Sans KR', 'Pretendard', sans-serif !important;
+    font-weight: 700; /* Bold */
 	letter-spacing: 0.5px;
 	text-transform: uppercase;
 	font-size: 12px;
@@ -416,8 +424,8 @@ section .section-header h1 {
 	font-size: 26px;
 	margin: 0%;
 	align-self: center;
-	font-family: 'Orbit', sans-serif;
-	font-weight: 800;
+    font-family: 'GmarketSansBold', sans-serif !important;
+    font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 }
@@ -445,8 +453,8 @@ section .section-header h1 {
 	margin: 0%;
 	margin-bottom: 0.5em;
 	align-self: center;
-	font-family: 'Orbit', sans-serif;
-	font-weight: 800;
+    font-family: 'GmarketSansBold', sans-serif !important;
+    font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 }
@@ -509,8 +517,8 @@ section .section-header h1 {
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
 	padding-left: 0.75em;
-	font-family: 'Orbit', sans-serif;
-	font-weight: 400;
+    font-family: 'Pretendard', 'Noto Sans KR', sans-serif !important;
+    font-weight: 400; /* Regular */
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -525,9 +533,9 @@ section .section-header h1 {
 	margin: 0px;
 	margin-bottom: 0.25em;
 	line-height: 1.5em;
-	font-family: 'Orbit', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif !important;
 	font-size: 10px;
-	font-weight: 800;
+	font-weight: 500; /* Medium */
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	color: var(--text-mission-title);
@@ -537,8 +545,8 @@ section .section-header h1 {
 	font-size: 18px;
 	margin: 0%;
 	align-self: center;
-	font-family: 'Orbit', sans-serif;
-	font-weight: 800;
+    font-family: 'GmarketSansBold', sans-serif !important;
+    font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	color: var(--text-mission-status);
@@ -549,7 +557,8 @@ section .section-header h1 {
 	align-items: center;
 	justify-content: flex-end;
 	white-space: pre-line;
-	font-family: 'Orbit', sans-serif;
+    font-family: 'Noto Sans KR', 'Pretendard', sans-serif !important;
+    font-weight: 700; /* Bold */
 	font-size: 12px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -608,7 +617,8 @@ section .section-header h1 {
 .event .name h1 {
 	line-height: 1.5em;
 	font-size: 12px;
-	font-family: 'Orbit', sans-serif;
+    font-family: 'Noto Sans KR', 'Pretendard', sans-serif !important;
+    font-weight: 700; /* Bold */
 	letter-spacing: 3px;
 	color: var(--text-location);
 	text-transform: uppercase;
@@ -626,8 +636,8 @@ section .section-header h1 {
 .event .preview {
 	line-height: 1.5em;
 	font-size: 16px;
-	font-weight: 400;
-	font-family: 'Orbit', sans-serif;
+    font-family: 'Noto Sans KR', 'Pretendard', sans-serif !important;
+    font-weight: 700; /* Bold */
 	color: var(--text-location);
 }
 
@@ -640,8 +650,8 @@ section .section-header h1 {
 .event a {
 	line-height: 1.5em;
 	font-size: 16px;
-	font-weight: 600;
-	font-family: 'Orbit', sans-serif;
+    font-family: 'Noto Sans KR', 'Pretendard', sans-serif !important;
+    font-weight: 700; /* Bold */
 	color: var(--primary-color);
 	text-decoration: underline;
 	cursor: pointer;
@@ -661,7 +671,8 @@ section .section-header h1 {
 .reserve .name h1 {
 	line-height: 1.5em;
 	font-size: 12px;
-	font-family: 'Orbit', sans-serif;
+    font-family: 'Noto Sans KR', 'Pretendard', sans-serif !important;
+    font-weight: 700; /* Bold */
 	letter-spacing: 3px;
 	color: var(--text-location);
 	text-transform: uppercase;
@@ -677,8 +688,8 @@ section .section-header h1 {
 }
 
 .reserve .description {
-	font-family: 'Orbit', sans-serif;
-	font-weight: 400;
+    font-family: 'Pretendard', 'Noto Sans KR', sans-serif !important;
+    font-weight: 400; /* Regular */
 	color: var(--text-markdown-p);
 	margin: 0.2em;
 	text-align: left;
@@ -740,8 +751,8 @@ section .section-header h1 {
 
 .pilot-wrapper h1 {
 	font-size: 12px;
-	font-weight: 400;
-	font-family: 'Orbit', sans-serif;
+    font-family: 'Noto Sans KR', 'Pretendard', sans-serif !important;
+    font-weight: 700; /* Bold */
 	line-height: 1.5em;
 	letter-spacing: 3px;
 	text-transform: uppercase;
@@ -759,8 +770,8 @@ section .section-header h1 {
 }
 
 .pilot-wrapper .pilot-code {
-	font-family: 'Orbit', sans-serif;
-	font-weight: 400;
+    font-family: 'D2Coding', monospace !important;
+    font-weight: normal;
 	line-height: 1.25em;
 	font-size: 11px;
 	color: var(--text-pilot-code);
@@ -833,8 +844,8 @@ section .section-header h1 {
 	font-size: 18px;
 	margin: 0%;
 	color: var(--text-location);
-	font-family: 'Orbit', sans-serif;
-	font-weight: bold;
+    font-family: 'Pretendard', 'Noto Sans KR', sans-serif !important;
+    font-weight: 400; /* Regular */
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 }
@@ -844,8 +855,8 @@ section .section-header h1 {
 	margin: 0%;
 	line-height: 1.5em;
 	color: var(--text-location);
-	font-family: 'Orbit', sans-serif;
-	font-weight: 500;
+    font-family: 'Noto Sans KR', 'Pretendard', sans-serif !important;
+    font-weight: 700; /* Bold */
 	text-transform: uppercase;
 	letter-spacing: 3px;
 }
@@ -931,8 +942,8 @@ section .section-header h1 {
 	font-size: 26px;
 	margin: 0%;
 	align-self: center;
-	font-family: 'Orbit', sans-serif;
-	font-weight: 800;
+    font-family: 'GmarketSansBold', sans-serif !important;
+    font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 }
@@ -1001,8 +1012,8 @@ section .section-header h1 {
 	font-size: 26px;
 	margin: 0%;
 	align-self: center;
-	font-family: 'Orbit', sans-serif;
-	font-weight: 800;
+    font-family: 'GmarketSansBold', sans-serif !important;
+    font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 }
@@ -1073,8 +1084,8 @@ section .section-header h1 {
 	font-size: 26px;
 	margin: 0%;
 	align-self: center;
-	font-family: 'Orbit', sans-serif;
-	font-weight: 800;
+    font-family: 'GmarketSansBold', sans-serif !important;
+    font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 }
@@ -1131,8 +1142,8 @@ section .section-header h1 {
 
 .mech h1 {
 	font-size: 12px;
-	font-weight: 400;
-	font-family: 'Orbit', sans-serif;
+    font-family: 'Noto Sans KR', 'Pretendard', sans-serif !important;
+    font-weight: 700; /* Bold */
 	line-height: 1.5em;
 	letter-spacing: 3px;
 	text-transform: uppercase;
@@ -1203,8 +1214,8 @@ section .section-header h1 {
 	font-size: 26px;
 	margin: 0%;
 	align-self: center;
-	font-family: 'Orbit', sans-serif;
-	font-weight: 800;
+    font-family: 'GmarketSansBold', sans-serif !important;
+    font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 }
@@ -1249,8 +1260,8 @@ section .section-header h1 {
 }
 
 .o-tip__content {
-	font-family: 'Orbit', sans-serif;
-	font-weight: 400;
+    font-family: 'D2Coding', monospace !important;
+    font-weight: normal;
 	line-height: 1.25em;
 	font-size: 11px;
 	background-color: var(--primary-color);
@@ -1302,9 +1313,9 @@ section .section-header h1 {
 	margin: 0px;
 	margin-bottom: 0.25em;
 	line-height: 1.5em;
-	font-family: 'Orbit', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif !important;
 	font-size: 10px;
-	font-weight: 800;
+	font-weight: 500; /* Medium */
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	color: var(--text-pilot-header);
@@ -1315,16 +1326,16 @@ section .section-header h1 {
 	margin: 0%;
 	margin-bottom: 0.25em;
 	align-self: center;
-	font-family: 'Orbit', sans-serif;
-	font-weight: 800;
+    font-family: 'GmarketSansBold', sans-serif !important;
+    font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	color: var(--text-pilot-value);
 }
 
 .person .code {
-	font-family: 'Orbit', sans-serif;
-	font-weight: 400;
+    font-family: 'D2Coding', monospace !important;
+    font-weight: normal;
 	line-height: 1.25em;
 	font-size: 11px;
 	color: var(--text-pilot-code);
@@ -1387,8 +1398,8 @@ section .section-header h1 {
 	font-size: 18px;
 	margin: 0%;
 	color: var(--text-location);
-	font-family: 'Orbit', sans-serif;
-	font-weight: bold;
+    font-family: 'Pretendard', 'Noto Sans KR', sans-serif !important;
+    font-weight: 400; /* Regular */
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 }
@@ -1402,8 +1413,8 @@ section .section-header h1 {
 	margin: 0%;
 	line-height: 1.5em;
 	color: var(--text-location);
-	font-family: 'Orbit', sans-serif;
-	font-weight: 500;
+    font-family: 'Noto Sans KR', 'Pretendard', sans-serif !important;
+    font-weight: 700; /* Bold */
 	text-transform: uppercase;
 	letter-spacing: 3px;
 }
@@ -1413,8 +1424,8 @@ section .section-header h1 {
 }
 
 .clock-summary {
-	font-family: 'Orbit', sans-serif;
-	font-weight: 400;
+    font-family: 'Pretendard', 'Noto Sans KR', sans-serif !important;
+    font-weight: 400; /* Regular */
 	color: var(--text-markdown-p);
 	margin: 0.2em;
 	text-align: left;
@@ -1429,8 +1440,8 @@ div.markdown {
 	padding-right: 1em;
 	font-size: 16px;
 	margin: 0%;
-	font-family: 'Orbit', sans-serif;
-	font-weight: 400;
+    font-family: 'Pretendard', 'Noto Sans KR', sans-serif !important;
+    font-weight: 400; /* Regular */
 	color: var(--text-markdown-p);
 	border-bottom: 1px solid var(--primary-color);
 	height: 350px;
@@ -1473,9 +1484,9 @@ div.markdown h1 {
 	margin: 0px;
 	margin-bottom: 0.25em;
 	line-height: 1.5em;
-	font-family: 'Orbit', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif !important;
 	font-size: 10px;
-	font-weight: 800;
+	font-weight: 500; /* Medium */
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	color: var(--text-markdown-h1);
@@ -1486,8 +1497,8 @@ div.markdown h2 {
 	margin: 0%;
 	margin-bottom: 1em;
 	align-self: center;
-	font-family: 'Orbit', sans-serif;
-	font-weight: 800;
+    font-family: 'GmarketSansBold', sans-serif !important;
+    font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	color: var(--text-markdown-h2);
@@ -1561,8 +1572,8 @@ div.markdown ol li {
 	font-size: 32px;
 	margin: 0%;
 	align-self: center;
-	font-family: 'Orbit', sans-serif;
-	font-weight: 800;
+    font-family: 'GmarketSansBold', sans-serif !important;
+    font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	padding:0.5em;
@@ -1588,8 +1599,8 @@ div.markdown ol li {
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
 	background-color: rgba(22, 28, 29, 1);
-	font-family: 'Orbit', sans-serif;
-	font-weight: 400;
+    font-family: 'D2Coding', monospace !important;
+    font-weight: normal;
 	line-height: 1.25em;
 	font-size: 16px;
 	color: var(--text-pilot-code);
