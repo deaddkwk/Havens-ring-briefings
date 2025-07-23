@@ -190,7 +190,7 @@ export default {
       return `/mechs/${this.pilot.callsign.toUpperCase()}.webp`
     },
     pilotGear() {
-      return [...lancerData.pilot_gear, ...warmachineData.pilot_gear ...dustgravedata.pilot_gear]
+      return [...lancerData.pilot_gear, ...warmachineData.pilot_gear, ...dustgravedata.pilot_gear]
     },
     mechWeapons() {
       return [...lancerData.weapons, ...ktbData.weapons, ...nrfawData.weapons, ...longrimData.weapons, ...warmachineData.weapons, ...osrdata.weapons, ...dustgravedata.weapons]
