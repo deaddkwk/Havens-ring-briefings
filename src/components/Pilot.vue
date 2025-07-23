@@ -184,10 +184,10 @@ export default {
   },
   computed: {
     pilotPortrait() {
-      return `/pilots/${this.pilot.callsign.toUpperCase()}.webp`
+      return `/pilots/${this.pilot.callsign.toUpperCase()}.png`
     },
     mechPortrait() {
-      return `/mechs/${this.pilot.callsign.toUpperCase()}.webp`
+      return `/mechs/${this.pilot.callsign.toUpperCase()}.png`
     },
     pilotGear() {
       return [...lancerData.pilot_gear, ...warmachineData.pilot_gear, ...dustgravedata.pilot_gear]
