@@ -140,7 +140,9 @@ import nrfawData from 'lancer-nrfaw-data'
 import longrimData from 'lancer-longrim-data'
 
 import wallflowerData from '@/assets/LCPs/wallflower-data-2.0.5'
+import war-machineData from '@/assets/LCPs/war-machine_2.0.15f'
 /*Append the datasets within computed if your LCP has new items.
+
 EX:
 pilotGear() {
   return [...lancerData.pilot_gear, ...wallflowerData.pilot_gear]
