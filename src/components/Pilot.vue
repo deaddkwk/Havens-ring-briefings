@@ -141,6 +141,9 @@ import longrimData from 'lancer-longrim-data'
 
 import wallflowerData from '@/assets/LCPs/wallflower-data-2.0.5'
 import warmachineData from '@/assets/LCPs/war-machine_2.0.15f'
+import osrdata from '@/assets/LCPs/osr-data-1.2.0'
+import dustgravedata from '@/assets/LCPs/dustgrave-data-1.4.0'
+
 /*Append the datasets within computed if your LCP has new items.
 
 EX:
@@ -187,16 +190,16 @@ export default {
       return `/mechs/${this.pilot.callsign.toUpperCase()}.webp`
     },
     pilotGear() {
-      return [...lancerData.pilot_gear, ...warmachineData.pilot_gear]
+      return [...lancerData.pilot_gear, ...warmachineData.pilot_gear ...dustgravedata.pilot_gear]
     },
     mechWeapons() {
-      return [...lancerData.weapons, ...ktbData.weapons, ...nrfawData.weapons, ...longrimData.weapons, ...warmachineData.weapons]
+      return [...lancerData.weapons, ...ktbData.weapons, ...nrfawData.weapons, ...longrimData.weapons, ...warmachineData.weapons, ...osrdata.weapons, ...dustgravedata.weapons]
     },
     mechSystems() {
-      return [...lancerData.systems, ...ktbData.systems, ...nrfawData.systems, ...longrimData.systems, ...warmachineData.systems]
+      return [...lancerData.systems, ...ktbData.systems, ...nrfawData.systems, ...longrimData.systems, ...warmachineData.systems, ...osrdata.systems, ...dustgravedata.systems]
     },
     talents() {
-      return [...lancerData.talents, ...ktbData.talents, ...nrfawData.talents, ...longrimData.talents, ...warmachineData.talents]
+      return [...lancerData.talents, ...ktbData.talents, ...nrfawData.talents, ...longrimData.talents, ...warmachineData.talents, ...osrdata.talents, ...dustgravedata.talents]
     },
     skills() {
       return [...lancerData.skills]    
@@ -205,7 +208,7 @@ export default {
       return [...ktbData.bonds]
     },
     frames() {
-      return [...lancerData.frames, ...ktbData.frames, ...nrfawData.frames, ...longrimData.frames, ...warmachineData.frames]
+      return [...lancerData.frames, ...ktbData.frames, ...nrfawData.frames, ...longrimData.frames, ...warmachineData.frames, ...osrdata.frames, ...dustgravedata.frames]
     },
     mechManufacturerIcon() {
       if (this.activeMech.manufacturer)
