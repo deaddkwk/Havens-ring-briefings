@@ -1,0 +1,1183 @@
+[
+  {
+    "id": "6bd0bbd5-9c83-4062-a19d-5c6780657c71",
+    "license_id": "6bd0bbd5-9c83-4062-a19d-5c6780657c71",
+    "source": "EM",
+    "license_level": 2,
+    "name": "IVLIVS 율리우스",
+    "mechtype": [
+      "Defender",
+      "Controller"
+    ],
+    "variant": "",
+    "description": "<div>단단한 적진을 부수기 위한 방법은 여러가지가 있겠지만, 누군가의 희생으로 적진에 균열을 만들 수 있다고 하면, 그것은 아마 율리우스 일것이다. 제국의 쐐기, EM-DC-01 율리우스는 자신을 아끼지 않고 적진 한가운데로 들어가 무너지지 않을거 같은 적의 진영을 점차 무너트리며, 최후까지 자신의 깃발을 높게 들고 올려 승리를 선언하는 역할을 맏고 있다. 율리우스의 내장 시스템, 전술 깃발 EM-DC-01FL, 수페라비(Superavi)는 고열을 방출하여 주변 기체들을 약화시키고 아군의 사기를 고양하며, 외장에 사용된 특수 자재, 액화 플라스틸-티타늄 합금은 과열되었을때 적의 공격을 정면에서 흘려내도록 특화되어 있다. 이러한 장비에도 불구하고, 잘 갖추어진 적진을 파고드는 역할이므로 격추율이 높다. 율리우스 조종사들은 전장에 나가기 전에 가장 먼저 행운의 여신께 기도를 올리면 무사히 돌아올 수 있다는 징크스가 있다고 한다.</div><div>한편, 헤리슨 아머리 쪽에서 자사 데이터를 훔쳐 만든 기체라고 연방 공식 대법정까지 갔지만, 재판은 제국의 승리로 돌아갔다.</div>",
+    "mounts": [
+      "Heavy",
+      "Aux/Aux"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 9,
+      "evasion": 8,
+      "edef": 10,
+      "heatcap": 8,
+      "repcap": 3,
+      "sensor_range": 10,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 4,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "행운아 Felix",
+        "use": null,
+        "description": "<div>오버히트 판정을 할때, 가장 낮게 나온 값 1개를 다시 굴릴 수 있습니다.</div>"
+      },
+      {
+        "name": "액화 플라스틸 장갑 Condensation Plasteel Armor",
+        "use": null,
+        "description": "<div>위험 상태일때, +1 장갑을 얻습니다.</div>"
+      },
+      {
+        "name": "어께동무 Shoulder To Shoulder",
+        "use": "",
+        "description": "<div>우호적인 캐릭터 또는 자신의 배치물이 인접한 상태라면, 자신을 향한 충각 공격 굴림에 +1 난이도, 강제 이동에 대한 내성 굴림에 +1 정확도를 받습니다.</div>"
+      }
+    ],
+    "core_system": {
+      "name": "V-1 카이저 코어 V-1 Kaiser Core",
+      "active_name": "주사위는 던져졌다! Ālea iacta est!",
+      "active_effect": "<p>당신은 반응로와 당신의 깃발을 연동시켜 극복의 깃발의 출력을 압도적으로 상승시킵니다. 이를 통해, 높은 수치의 열을 부여하여 적들의 반응로를 폭주시킵니다.</p><p>깃발을 배치하지 않았거나, 인접한 칸에 깃발이 있을때 사용할 수 있습니다.</p><p>당신의 깃발은 이제 당신과 일체화 하여, 더 이상 배치물이 아닌 율리우스 지속 효과가 됩니다.</p><p>또한, 당신은 다음 같은 추가 효과를 가집니다.</p><ul><li><p>이제 열을 가하는 대상에서 자신을 제외하며, 인접한 캐릭터가 턴을 시작하거나 라운드에 처음으로 인접했을때 열 1점이 아닌 2점을 가합니다.</p></li><li><p>오버히트시, 굴림 결과를 무시하고 다음 자신의 턴 종료시까지 손상됩니다. (단, 여전히 스트레스가 0이 되면 기체는 멜트다운합니다!)</p></li></ul>",
+      "activation": "Quick",
+      "description": "",
+      "deactivation": "",
+      "use": "Scene",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "극복의 깃발 Superavi",
+      "passive_effect": "<p>당신은 고열을 방출하여 주변 적들을 버틸 수 없게 하는 깃발을 가지고 있습니다. 깃발은 HP (10+투지), 장갑 1, 회피 10의 배치물이며, 당신은 빠른 행동으로 깃발을 인접한 빈 칸에 배치할 수 있습니다. 깃발은 다음 같은 효과를 가지고 있습니다.</p><ul><li><p>깃발은 방출 범위 5의 열풍을 발산하여 범위 내 지역을 험지로 만듭니다. 또한 범위 5안의 당신이 선택한 캐릭터들과 당신은 해당 영역에서 턴을 시작하거나 라운드에 처음으로 해당 영역으로 들어갈때 열 1점을 받습니다. 깃발과 인접하게 턴을 시작하거나 라운드에 처음으로 인접한 캐릭터는 열 1점을 추가로 받습니다.</p></li><li><p>당신과 인접한 상태인 깃발은 모든 피해에 저항을 얻습니다.</p><p>당신은 인접한 깃발을 자유 행동으로 회수할 수 있습니다. 깃발이 파괴되면 수리시 수리 점수 1점을 소모하여 수리할 수 있습니다. 깃발은 장면 종료시 자동으로 회수되고 모든 체력을 회복합니다.</p></li></ul>",
+      "passive_actions": [
+        {
+          "name": "깃발 설치 Depoly Flag",
+          "activation": "Quick",
+          "detail": "<p>수페라비를 인접한 빈 공간에 설치합니다.</p>",
+          "cost": "",
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": ""
+        },
+        {
+          "name": "깃발 회수 Recall Flag",
+          "activation": "Free",
+          "detail": "<p>인접한 깃발을 회수합니다.</p>",
+          "cost": 0,
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": ""
+        }
+      ],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [
+        "f2e52bd8-51af-4929-942e-3d78c3e490a7"
+      ],
+      "tags": []
+    },
+    "image_url": "https://img.itch.zone/aW1hZ2UvMjMwNjE1MC8xNDI3NjEyOC5wbmc=/original/5Pf%2Fnc.png",
+    "y_pos": 28
+  },
+  {
+    "id": "15cf548b-bd30-4d1a-8892-e06fbf4429d8",
+    "license_id": "15cf548b-bd30-4d1a-8892-e06fbf4429d8",
+    "source": "EM",
+    "license_level": 2,
+    "name": "Lucius 루키우스 ",
+    "mechtype": [
+      "Artillery",
+      "Controller"
+    ],
+    "variant": "",
+    "description": "",
+    "mounts": [
+      "Heavy",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 12,
+      "edef": 8,
+      "heatcap": 5,
+      "repcap": 2,
+      "sensor_range": 12,
+      "tech_attack": -1,
+      "save": 12,
+      "speed": 5,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "중앙 집중 타격 시스템 Central Strike System",
+        "use": "",
+        "description": "<div>자신의 수류탄 또는 광역 범위 무기가 대상 하나에게만 영향을 가할때, 추가 피해가 절반이 되지 않고 +1 추가 피해를 가합니다.</div>"
+      },
+      {
+        "name": "헬레니즘 Helenism",
+        "use": "",
+        "description": "<div>수류탄 태그가 있는 장비의 시스템 포인트 요구치가 1 감소하지만(최소 1), 지뢰를 설치할 수 없게 됩니다.</div>"
+      },
+      {
+        "name": "적재 균형 loading balance",
+        "use": "",
+        "description": "<div>초대형 무기를 장착할 수 없으며, 중형 무기로 공격하면 당신은 다음 턴 시작시까지 다른 마운트의 중형 무기를 사용할 수 없습니다.</div><div>당신이 장비하는 모든 중형 무기는 희귀 태그를 얻습니다.</div>"
+      }
+    ],
+    "core_system": {
+      "name": "V-5 오메가 코어 V-5 Omega Core",
+      "active_name": "거장의 강림이다! Qualis Artifex Adventus!",
+      "active_effect": "<p>당신은 지속시간 동안 적재 균형 특성을 잃고, 매 턴 추가로 수류탄 하나를 던질 수 있는 빠른 행동 하나를 얻습니다.</p><p>또한, 더 이상 케스케이드 하지 않고, 중앙 집중 타격 시스템의 효과를 받을때 그 피해에 AP를 적용받습니다.</p><p>이 효과는 당신이 수류탄을 하나도 사용하지 않은 당신의 턴의 종료시 끝나거나, 프로토콜 행동으로 끝낼 수 있습니다.</p>",
+      "activation": "Full",
+      "description": "",
+      "deactivation": "",
+      "use": "",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "네로-클래스 NHP NEro-Class NHP",
+      "passive_effect": "<p>당신의 메카는 AI 태그를 얻습니다.</p><p>당신이 메카를 다루고 있지 않아도, 네로-클래스는 당신의 폭파광 재능을 적용받을 수 있습니다.</p><p></p><p>네로-클래스는 특수한 캐스케이드를 가지기 때문에, 케스케이드 판정시 d20이 아닌 d6을 사용해서 판정합니다.</p><p>캐스케이드시, 네로-클래스는 추가로 수류탄 하나를 던질 수 있는 빠른 행동을 얻지만, 무기를 사용할 수 없게 됩니다.</p><p>만약, 자신이 사용할 수 있는 수류탄이 남지 않았다면, 네로-클래스는 케스케이드를 끝내고 다음 턴 종료시까지 기절합니다.</p><p></p><p><code>감히 나 말고 다른 NHP를 사용한다니, 어리석구나! </code>(또한, 당신은 다른 NHP 장비를 장착 할 수 없습니다)</p>",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "image_url": "https://github.com/TheFwuffernaut/Baronic-Defense-Forces/blob/0fa66886dae02b1a9296de0af21b98bd2a685480/khanda_1080.png?raw=true",
+    "y_pos": 20
+  },
+  {
+    "id": "be1defb8-b050-4424-9e8d-ec0771ebddb8",
+    "license_id": "be1defb8-b050-4424-9e8d-ec0771ebddb8",
+    "source": "OEG",
+    "license_level": 2,
+    "name": "모건 Morgan",
+    "mechtype": [
+      "Striker",
+      "Defender"
+    ],
+    "variant": "",
+    "description": "<div>On paper, the IPS-N Morgan is an in-development project for a new frame built off of the Blackbeard chassis. This is, in truth, a cover, and the Morgan is both finished and never going to be finished. The ongoing development fund for the Morgan project, which has never produced a frame and is eternally in development, provides cover for the cost of production and distribution of the actual Morgan chassis, which does not exist on any of IPS-N's logbooks.</div><div>Built as a deniable asset frame, the Morgan springboards off of the Blackbeard and Kidd specs to create a frame ramshackle in appearance, but extremely rugged and modular in design, operating independently without backup or official support for extended periods of time by interfacing with most weapons and being able to jerry-rig combat contraptions in the field.</div><div>To most outsiders, the Morgan appears as a run-of-the-mill, cobbled together frame, welded and riveted together by pirates in dimly lit shacks. IPS-N off-book operatives play into this fact as it provides the perfect cover for their wetwork, intentionally presenting a dinged up chassis barely able to support its own weapons, utilizing improvised explosives and overpowered scatterguns to make up for its cracked optics and bottom-barrel targeting systems.</div>",
+    "mounts": [
+      "Flex",
+      "Flex",
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 12,
+      "evasion": 8,
+      "edef": 6,
+      "heatcap": 4,
+      "repcap": 5,
+      "sensor_range": 10,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 5,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "약탈 Ransack",
+        "use": "",
+        "description": "<div>모건의 무기는 비-캐릭터에게 2배 피해를 가합니다.</div>"
+      },
+      {
+        "name": "현측 Broadside",
+        "use": "Round",
+        "description": "<div>1/라운드, 자신의 원뿔, 폭발, 방출 또는 직선 범위의 공격시 무기에 확정 3을 부여합니다.</div>"
+      },
+      {
+        "name": "해적 갈고리 Corsair Claw",
+        "use": "",
+        "description": "<div>해적 갈고리 빠른 행동을 얻습니다.</div>",
+        "actions": [
+          {
+            "name": "해적 갈고리 Corsair Claw",
+            "activation": "Quick",
+            "detail": "<div>인접한 대상 하나를 선택하고:</div><ul><li><div>만약 그것이 캐릭터라면, 대상은 자신과 선체 대결 판정을 하여 패배시 다음 자신의 턴 종료시까지 파쇄됩니다.</div></li><li><div>만약 그것이 크기 1의 지형, 배치물 또는 비-고정 물체라면, 당신은 그것을 센서내에 시야 안 빈 공간에 던질 수 있습니다.</div></li></ul>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          }
+        ]
+      },
+      {
+        "name": "노출된 반응로 Exposed Reactor",
+        "use": "",
+        "description": "<div>공학 내성 굴림과 판정에 불리점을 받습니다.</div>"
+      }
+    ],
+    "core_system": {
+      "name": "케-그 제리-리그 반응로 K-Eg Jerry-rigged Reactor",
+      "active_name": "검은 깃발 Black Flag",
+      "active_effect": "<p>장면 종료시까지, 당신의 공격 또는 효과(자신의 배치물이나 드론 포함)의 범위가 다음 같이 조절할 수 있습니다:</p><ul><li><p>원뿔: +2</p></li><li><p>직선: +5</p></li><li><p>폭발 그리고 방출: +1</p></li></ul>",
+      "activation": "Protocol",
+      "description": "<p>Taking notes from the Fuel Rod Gun, the Titan–Enceladus Field Project created the K-Eg as another method of weaponizing reactors and fuel rods, rigging those deemed spent or past their expiration date to blow up in a spectacular explosion when damaged. Instructions on how to construct these are distributed under the guise of manuals on how to properly dispose of spent field rods and not turn them into explosive devices.</p>",
+      "deactivation": "",
+      "use": "Scene",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "케-그 제리-리그 반응로 K-Eg Jerry-rigged Reactor",
+      "passive_effect": "<p>빠른 행동으로, 센서내에 시야 안 빈 공간에 케-그를 설치합니다. 자신의 턴 종료시, 케-그는 준비됩니다. 이미 준비된 케-그는 대신 파괴됩니다.</p><p>준비된 케-그는 파괴되었을때 폭발 범위 2 크기의 폭발을 만듭니다. 범위내 캐릭터들은 민첩 내성 굴림을 굴려 실패시 3 폭발 피해 + 3 화재 피해를 입습니다. 성공시, 절반의 피해와 화재를 부여합니다.</p><p>물체와 배치물은 자동으로 10 AP 폭발 피해를 입습니다.</p>",
+      "passive_actions": [
+        {
+          "name": "케-그 배치 Deploy K-Eg",
+          "activation": "Quick",
+          "detail": "<p>센서내에 시야 안 빈 공간에 케-그를 설치합니다.</p>",
+          "cost": 0,
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": ""
+        }
+      ],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [
+        {
+          "name": "케-그 제리-리그 반응로 K-Eg Jerry-rigged Reactor",
+          "type": "BOMB",
+          "detail": "<p>자신의 턴 종료시, 케-그는 준비됩니다. 이미 준비된 케-그는 대신 파괴됩니다.</p><p>준비된 케-그는 파괴되었을때 폭발 범위 2 크기의 폭발을 만듭니다. 범위내 캐릭터들은 민첩 내성 굴림을 굴려 실패시 3 폭발 피해 + 3 화재 피해를 입습니다. 성공시, 절반의 피해와 화재를 부여합니다.</p><p>물체와 배치물은 자동으로 10 AP 폭발 피해를 입습니다.</p>",
+          "size": 1,
+          "activation": "",
+          "deactivation": "",
+          "recall": "",
+          "redeploy": "",
+          "instances": 1,
+          "cost": "0",
+          "armor": "0",
+          "hp": "5",
+          "evasion": "6",
+          "edef": "6",
+          "heatcap": "",
+          "repcap": "",
+          "sensor_range": "",
+          "tech_attack": "",
+          "save": "",
+          "speed": "",
+          "pilot": false,
+          "mech": false,
+          "actions": [],
+          "bonuses": [],
+          "synergies": [],
+          "counters": []
+        }
+      ],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "image_url": "https://img.itch.zone/aW1hZ2UvMjMwNjE1MC8xNjM0MTI0My5wbmc=/original/FD3zo7.png",
+    "y_pos": 8
+  },
+  {
+    "id": "1d4662a2-0ef8-4081-aab8-41c0913dee26",
+    "license_id": "1d4662a2-0ef8-4081-aab8-41c0913dee26",
+    "source": "EM",
+    "license_level": 2,
+    "name": "Rōmulus/Remus 로물루스/레무스",
+    "mechtype": [
+      "Striker",
+      "Artillery"
+    ],
+    "variant": "",
+    "description": "",
+    "mounts": [
+      "Main/Aux",
+      "Main/Aux",
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 10,
+      "evasion": 6,
+      "edef": 8,
+      "heatcap": 8,
+      "repcap": 5,
+      "sensor_range": 3,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 4,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "마르스의 용맹 Intrepidity of Mārs",
+        "use": "Round",
+        "description": "<div>1/라운드, 빠른 공격이나 전력 공격시, 이번 라운드에 공격하지 않은 마운트 하나로 추가로 공격할 수 있습니다.</div><div>또한, 당신은 한 마운트에 같은 크기의 무기를 장착할 수 없습니다.</div>"
+      },
+      {
+        "name": "혈향 Blood Scent",
+        "use": "Round",
+        "description": "<div>혈흔 감지 자유 행동을 얻습니다.</div>",
+        "actions": [
+          {
+            "name": "혈흔 감지 Detect bloodstains",
+            "activation": "Free",
+            "detail": "<div>센서내의 대상 하나를 선택합니다. 대상의 체력이 절반 이하라면, 대상의 남은 체력을 알 수 있습니다.</div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          }
+        ]
+      },
+      {
+        "name": "지원 종료된 시스템 deprecated System",
+        "use": "",
+        "description": "<div>모든 내성 굴림에 파일럿 메카 스킬 스텟을 받을 수 없습니다.</div>"
+      }
+    ],
+    "core_system": {
+      "name": "형상변환자 Shapeshifter",
+      "active_name": "원대한 꿈을 꾸는 짐승 Bestia magna somnia",
+      "active_effect": "<p>당신은 손상된 기체를 재생성을 하기 위한 변태를 시작합니다.</p><p>다음 당신의 턴 시작시까지, 당신은 기절하고 모든 피해와 열, 기절을 제외한 상태 이상에 면역이 됩니다.</p><p>다음 당신의 턴 시작시, 모든 체력과 열 한계치를 회복하고 그 턴에만 형태변환 : 신화를 얻습니다.</p>",
+      "activation": "Full",
+      "description": "",
+      "deactivation": "",
+      "use": "",
+      "active_actions": [
+        {
+          "name": "형태변환 : 신화 Shapeshift : myth",
+          "activation": "Protocol",
+          "detail": "<p><span>퀴리누스</span> 폼으로 바꿉니다.</p><p>다음 자신의 턴 시작시까지 공격시 다음 같은 효과를 얻습니다:</p><ul><li><p>무기 공격: 이제 모든 1d3 주사위는 1d6+2로 바뀝니다.</p></li><li><p>침투: 센서 안의 다른 대상 하나를 추가로 골라 대상에게도 해킹 공격을 시도합니다. 적중시 대상에게도 같은 침투 효과를 사용합니다.</p></li></ul>",
+          "cost": 0,
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": ""
+        }
+      ],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "야성의 양면성 Wild's ambivalence",
+      "passive_effect": "<p>당신은 전투 시작시, 로물루스 폼과 레무스 폼 중 하나를 골라 그 형태를 취합니다.</p><p>로물루스 폼은 보조 무기를 사용할 수 없고, 레무스 폼은 주 무기를 사용할 수 없습니다.</p><p>또한 형태변환 : 광란 과 형태변환 : 냉정 행동을 얻습니다.</p><p>형태변환은 한 턴에 하나만 사용할 수 있고, 폼은 동시에 하나만 활성화됩니다.</p>",
+      "passive_actions": [
+        {
+          "name": "형태변환 : 광란 Shapeshift : Frenzy",
+          "activation": "Protocol",
+          "detail": "<p>자신이 레무스 폼이 아닐때만 사용할 수 있습니다, 레무스 폼으로 바꿉니다.</p><p>다음 자신의 턴 시작시까지 공격시 다음 같은 효과를 얻습니다:</p><ul><li><p>무기 공격 : 모든 무기 피해 1d3 주사위를 1d6으로 바꾸고, 근거리 무기라면 장갑 관통, 원거리 무기라면 확정 +2를 얻습니다.</p></li><li><p>침투 : 1/라운드, 적중시 대상의 열 저항을 무시하며, 열을 1점 더 가합니다.</p></li></ul>",
+          "cost": 0,
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": ""
+        },
+        {
+          "name": "형태변환 : 냉정 Shapeshift : Cooling",
+          "activation": "Protocol",
+          "detail": "<p>자신이 로물루스 폼이 아닐때만 사용할 수 있습니다, 로물루스 폼으로 바꿉니다.</p><p>다음 자신의 턴 시작시까지 공격시 다음 같은 효과를 얻습니다:</p><ul><li><p>무기 공격 : 다음 대상의 턴 종료시까지, 대상에게 가하는 모든 해킹 공격은 +1 정확도를 받고, 대상은 시스템 내성 굴림에 + 1 난이도를 받습니다.</p></li><li><p>침투 : 이번 턴 종료시까지, 대상은 반응 행동을 취할 수 없습니다.</p></li></ul>",
+          "cost": 0,
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": ""
+        }
+      ],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "https://i.redd.it/ohmkrxz68pob1.png",
+    "y_pos": 52
+  },
+  {
+    "id": "580b523d-02a3-4999-8374-cedd56218669",
+    "license_id": "mf_emperor",
+    "source": "SSC",
+    "license_level": 2,
+    "name": "칼립트라 Calyptra",
+    "mechtype": [
+      "Controller",
+      "Striker"
+    ],
+    "variant": "Emperor",
+    "description": "",
+    "mounts": [
+      "Flex",
+      "Flex"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 10,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 2,
+      "sensor_range": 10,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 4,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "흡혈 bloodsucking",
+        "use": "Round",
+        "description": "<div>자신은 투지로 HP가 증가하지 않습니다.</div><div>자신이 공격을 성공시키면 대상과 인접한 드론들은 2 + 투지만큼 임시 보호막을 얻습니다.</div><div>각 드론마다 라운드에 한번만 임시 보호막을 받을 수 있습니다.</div>",
+        "bonuses": [
+          {
+            "id": "hp",
+            "val": "-{grit}",
+            "damage_types": [],
+            "range_types": [],
+            "weapon_types": [],
+            "weapon_sizes": [],
+            "overwrite": false,
+            "replace": false
+          }
+        ]
+      },
+      {
+        "name": "백작의 하수인들 Count's Servent",
+        "use": "",
+        "description": "<div>자신이 원거리 또는 근접 공격으로 인해 피해를 입을때, 센서내의 드론을 원하는 만큼 선택합니다. 그 드론들의 임시 보호막을 지우고 그 합만큼 피해를 감소시킵니다.</div><div>자신이 원거리 또는 근접 공격으로 피해를 가할때, 센서내의 드론 하나를 선택합니다. 드론의 임시 보호막을 지우고 그만큼 대상에게 에너지 피해를 가합니다.</div>"
+      },
+      {
+        "name": "운동량 흡수 추진체 Momentum drain Launchers",
+        "use": "",
+        "description": "<div>자신을 대상으로 하는 원거리 또는 근거리 공격이 빗나가면, 그 공격으로 인한 모든 피해와 효과에 면역을 얻습니다.</div><div>또한, 공격 처리 후, 원하는 방향으로 1칸 이동합니다. 이 이동은 교전과 반응 행동을 유발하지 않습니다.</div>"
+      }
+    ],
+    "core_system": {
+      "name": "크림슨 레갈리아 Crimson Regalia",
+      "active_name": "핏빛 연회 Sanguine Feast",
+      "active_effect": "<p>자신과 자신의 드론들은 원하는 순서대로 인접한 적대적인 캐릭터에게 각각 근접 공격을 시도합니다.</p><p>이 근접 공격은 투지만큼의 명중 보너스를 받고, +1 정확도를 받습니다.</p><p>적중시, 1d6 AP 물리 피해를 가하고 그 수치만큼 공격자는 임시 보호막을 얻습니다. 만약 이미 있었다면, 기존의 임시 보호막을 대체하는 대신 더합니다.</p><p>이 능력은 효율적입니다. 사용했다면 장면이 끝나고 나서 1CP를 돌려받습니다.</p>",
+      "activation": "Quick",
+      "description": "",
+      "deactivation": "",
+      "use": "Turn",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "악의 카리스마 Evil's Charisma",
+      "passive_effect": "<p>당신은 전투 시작시 뱀파이어 스폰 드론 하나를 센서내에 배치하고 시작합니다.</p><p>1/라운드, 당신은 빠른 행동으로 뱀파이어 스폰 드론 하나를 배치할 수 있습니다.</p><p>만약, 당신의 센서내에 잔해가 있다면, 잔해를 파괴하고 빠른 행동 대신 자유 행동으로 배치할 수 있습니다.</p>",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [
+        {
+          "name": "뱀파이어 스폰 드론 Vampire Spawn Drone",
+          "type": "Drone",
+          "detail": "<p>이 드론은 당신의 해킹 행동의 대상이 될때, 아군 메카로 취급합니다.</p><p>(뱀파이어 드론, 타입 : 드론, 크기 1, 체력 5, 회피/대전자전 5, 속도 3)</p><p>당신의 턴 시작시, 당신은 센서 내의 모든 뱀파이어 스폰 드론들을 부스트 할 수 있습니다.</p><p>당신은 최대 3기의 뱀파이어 스폰 드론을 조종할 수 있으며, 그 이상을 조종하려 하면 기존의 것 하나를 파괴해야 합니다.</p>",
+          "size": 1,
+          "activation": "Quick",
+          "deactivation": "",
+          "recall": "",
+          "redeploy": "",
+          "instances": 1,
+          "cost": 1,
+          "armor": "0",
+          "hp": "5",
+          "evasion": "5",
+          "edef": "5",
+          "heatcap": "",
+          "repcap": "",
+          "sensor_range": "",
+          "tech_attack": "",
+          "save": "10",
+          "speed": "3",
+          "pilot": false,
+          "mech": false,
+          "actions": [],
+          "bonuses": [],
+          "synergies": [],
+          "counters": []
+        }
+      ],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": [
+        {
+          "id": "tg_round",
+          "name": "{VAL}/Round",
+          "description": "This system, trait or reaction can be used {VAL} number of times between the start of the user’s turn and the start of their next turn.",
+          "val": 1
+        }
+      ]
+    },
+    "specialty": false,
+    "image_url": "https://preview.redd.it/vampire-themed-gunslinger-tokugawa-v0-c0pnzi1f50ud1.png?width=1080&crop=smart&auto=webp&s=7da0d05ea1a409d092f3bb2b26756256a3796f56",
+    "y_pos": 26
+  },
+  {
+    "id": "54939565-2af3-44e9-b506-9f591d1db635",
+    "license_id": "54939565-2af3-44e9-b506-9f591d1db635",
+    "source": "C&H",
+    "license_level": 2,
+    "name": "사브뢰르 SABREUR",
+    "mechtype": [
+      "Striker"
+    ],
+    "variant": "",
+    "description": "<div><span>On Suldan, the popularity of the arena runs all the way from the most impoverished socioeconomic strata to the rarefied heights of the planet's self-styled aristocracy. Formal chassis dueling was adopted by the upper class of Suldani society during the Emir's reign in an attempt to further distinguish themselves, with various members of the nobility importing and even commissioning custom chassis designed specifically for dueling purposes. Despite a brief fascination with Smith-Shimano models, interests eventually turned to more local, bespoke designs.</span><br><span>Following the revolution, C&amp;H engineers liberated the specifications for one such design in the Sabreur and repurposed it for broader distribution. While the precise battlefield role of such a dueling-oriented design remains somewhat vague, adoption rates have risen significantly since C&amp;H has begun advertising it as “a high-performance chassis for elite pilots,” opting to let matters of strategic deployment and combat doctrine sort themselves out.</span></div>",
+    "mounts": [
+      "Flex",
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 12,
+      "edef": 6,
+      "heatcap": 4,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": -1,
+      "save": 10,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "반응성 증강 Reaction Enhancer",
+        "use": "",
+        "description": "<div>완벽한 순간 반응 행동을 얻습니다. 이 능력은 라운드 제한이 없습니다.</div>",
+        "actions": [
+          {
+            "name": "완벽한 순간 Perfect timing",
+            "activation": "Reaction",
+            "detail": "<div>그 공격을 빗나가게 하고, 그 공격의 모든 효과와 피해에 면역이 됩니다.</div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": "<div>자신을 향한 근접 또는 원거리 공격의 명중 값이 자신의 회피와 같을때.</div>"
+          }
+        ]
+      },
+      {
+        "name": "초기 경보 시스템 Early Warning System",
+        "use": "",
+        "description": "<div>내성 굴림의 실패로 인해 피해를 입어야 할때, 그 피해를 절반으로 합니다.</div>"
+      },
+      {
+        "name": "반격 Riposte",
+        "use": "",
+        "description": "<div>1/라운드, 자신에게 공격을 가하면, 다음 자신의 턴 종료시까지 다음 공격에 +1d6 피해를 추가 피해로 가합니다.</div><div>만약 효과를 유발시킨 공격을 회피했다면, 피해 굴림시 1d6을 2번 굴려서 높은 값을 추가 피해로 가합니다.</div>"
+      }
+    ],
+    "core_system": {
+      "name": "아크엔젤 오토키네시스 Archangel Autokinesics",
+      "active_name": "보조 전투 의식 Ancillary Battle Consciousness",
+      "active_effect": "<p>남은 장면 동안, 당신을 향한 모든 공격은 정확도를 상실합니다.</p><p>본능의 경계 반응 행동을 얻습니다. 또한, 당신이 완벽한 순간 반응 행동을 사용했다면, 본능의 경계도 함께 발동됩니다. (추가 반응 행동 소모 없음)</p>",
+      "activation": "Protocol",
+      "description": "<p><span>Many chassis duelists employ purpose-tasked integrated NHP partitions, often referred to as their “second,” to handle various operations in order to allow them to focus their attention more fully upon the finer points of martial honor. This particular iteration, designated ARCHANGEL, employs a synapse-analogue reflex architecture that bypasses conventional permission/denial channels in order to respond to incoming attacks with greatly increased reaction time, pre-calculating evasive maneuvers based on comprehensive kinesic models and threat evaluation patterns, granting pilots a “sixth sense” that allows them to more comprehensively avoid danger.</span><br><span>Pushing additional power and architecture permissions into this system is technically possible and greatly boosts reaction/response parameters beyond manufacturer baselines but carries with it the risk of the partition spontaneously developing enhanced cognition. While the results can be undeniably effective, it is strongly recommended that any pilot that does so cycle this system afterwards as soon as possible. C&amp;H reminds its license holders that it accepts no liability for spontaneous NHP enlightenment and associated responsibilities thereof.</span></p>",
+      "deactivation": "",
+      "use": "",
+      "active_actions": [
+        {
+          "name": "본능의 경계 Instinct Edge",
+          "activation": "Reaction",
+          "detail": "<p>교전과 반응 행동을 무시하고, 이동 속도만큼 이동합니다. 이동 후 인접한 캐릭터들에게 3 AP 물리 피해를 가합니다.</p><p>이 능력은 라운드 제한 없이 사용할 수 있지만, 각 캐릭터들은 이 능력으로 라운드에 한번만 피해를 입습니다.</p>",
+          "cost": 0,
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": "<p>적대적인 캐릭터가 당신을 향한 공격을 빗맞췄을때.</p>"
+        }
+      ],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "",
+      "passive_effect": "",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "https://i.imgur.com/AeWdBkQ.png",
+    "y_pos": 18
+  },
+  {
+    "id": "SherpaSherpaSherpa",
+    "license_id": "SherpaSherpaSherpa",
+    "source": "FFT",
+    "license_level": 1,
+    "name": "셰르파 Sherpa",
+    "mechtype": [
+      "Balanced"
+    ],
+    "variant": "",
+    "description": "<div>FFT는 전쟁이 끝난뒤 완전한 비무장 선언을 통해 탐사용 메크 네버에버를 계발하였다.</div><div>완전한 탐사용 메크인 네버에버는 제국 시절의 잔재를 없애고 순수한 탐사자의 모습으로 돌아가겠다는 의도가 담긴 메크였지만 이 우주에는 그러한 비-전투형 메크로는 한계가 있었고, 곧바로 수 많은 사상자와 피해가 있었다.</div><div>결국, 연방은 FFT에 대한 무장 제한 제약을 해지하게 되었고, 이후 개발된 기체인 셰르파는 기초적인 무장을 장비할 수 있다.</div><div>여전히 전투 모드에 대한 제약과 대형 무기 사용 금지 조약때문에 무장은 약하지만, 셰르파는 에베레스트의 다양한 확장성을 모티브를 받아 다양한 전용 타입을 양산하기로 하였다.</div><div>현재 이 프레임은 공식적으로는 TYPE Z, 타입 제로를 의미하며, 기본적인 확장팩을 제외한 기초 프레임만 장비한 상태이다.</div><div>에베레스트에서 모티브를 받았기 때문에, 기본-디자인이 존재하지 않고, 탐사하는 지형에 위장하기 좋은 형태로 외장을 교체한다.</div>",
+    "mounts": [
+      "Flex"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 5,
+      "repcap": 2,
+      "sensor_range": 8,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 4,
+      "sp": 4
+    },
+    "traits": [
+      {
+        "name": "계승 Inheritance",
+        "use": "",
+        "description": "<div>만들어지거나 완전 수리시, 당신이 라이선스를 가지고 있는 아무 프레임의 특성 하나를 선택합니다.</div><div>다음 완전 수리전까지 그것을 얻습니다.</div>"
+      },
+      {
+        "name": "다용도 부품 Multi-use Parts",
+        "use": "",
+        "description": "<div>휴식시, 1 구조 피해 또는 1 스트레스 피해당 1 수리로 수리할 수 있습니다.</div>",
+        "bonuses": [
+          {
+            "id": "cheap_struct",
+            "val": "true",
+            "damage_types": [],
+            "range_types": [],
+            "weapon_types": [],
+            "weapon_sizes": [],
+            "overwrite": false,
+            "replace": false
+          },
+          {
+            "id": "cheap_stress",
+            "val": "true",
+            "damage_types": [],
+            "range_types": [],
+            "weapon_types": [],
+            "weapon_sizes": [],
+            "overwrite": false,
+            "replace": false
+          }
+        ]
+      },
+      {
+        "name": "탐사용 장비 For exploration",
+        "use": "",
+        "description": "<div>초대형 무기나 중형 무기를 장착할 수 없고, 전력 공격/해킹을 수행할 수 없습니다.</div><div>하지만 섬세한 작업을 할 수 있게 만들어진 장비 덕분에 메카가 수행하기엔 너무 작거나 민감한 장비도 작동시킬 수 있습니다.</div>"
+      }
+    ],
+    "core_system": {
+      "name": "보조 냉각 코어 Auxiliary Coldcore Reactor",
+      "active_name": "긴급 출력 Emergency Power",
+      "active_effect": "<p>부스트 합니다.</p><p>이 능력은 효율적이므로, 사용했다면 장면 종료시 1 CP를 회복합니다.</p>",
+      "activation": "Free",
+      "description": "",
+      "deactivation": "",
+      "use": "",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "",
+      "passive_effect": "<p></p>",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "y_pos": 43
+  },
+  {
+    "id": "AquasherpaAquasherpa",
+    "license_id": "SherpaSherpaSherpa",
+    "source": "FFT",
+    "license_level": 2,
+    "name": "셰르파-A Sherpa Type A",
+    "mechtype": [
+      "Balanced",
+      "Controller"
+    ],
+    "variant": "셰르파 Sherpa",
+    "description": "<div>FFT는 전쟁이 끝난뒤 완전한 비무장 선언을 통해 탐사용 메크 네버에버를 계발하였다.</div><div>완전한 탐사용 메크인 네버에버는 제국 시절의 잔재를 없애고 순수한 탐사자의 모습으로 돌아가겠다는 의도가 담긴 메크였지만 이 우주에는 그러한 비-전투형 메크로는 한계가 있었고, 곧바로 수 많은 사상자와 피해가 있었다.</div><div>결국, 연방은 FFT에 대한 무장 제한 제약을 해지하게 되었고, 이후 개발된 기체인 셰르파는 기초적인 무장을 장비할 수 있다.</div><div>여전히 전투 모드에 대한 제약과 대형 무기 사용 금지 조약때문에 무장은 약하지만, 셰르파는 에베레스트의 다양한 확장성을 모티브를 받아 다양한 전용 타입을 양산하기로 하였다.</div><div>현재 이 프레임은 Type A, 수중 탐사 전문 장비를 착용한 모델이다.</div><div>속도를 강화해 수중에서의 장애물 회피 능력과 원거리 전투시의 개선을 시도했고, 무장을 활용한 전투 보다 해킹 능력을 통한 적 제압에 강화를 받았다.</div>",
+    "mounts": [
+      "Main"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 10,
+      "edef": 8,
+      "heatcap": 5,
+      "repcap": 3,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 5,
+      "sp": 3
+    },
+    "traits": [
+      {
+        "name": "계승 Inheritance",
+        "use": "",
+        "description": "<div>만들어지거나 완전 수리시, 당신이 라이선스를 가지고 있는 아무 프레임의 특성 하나를 선택합니다.</div><div>다음 완전 수리전까지 그것을 얻습니다.</div>"
+      },
+      {
+        "name": "세이렌 코드 siren code",
+        "use": null,
+        "description": "<div>자신이 물 타일과 인접하거나 잠수 상태라면, 열 저항을 얻고 해킹 행동 시 정확도 +1를 받습니다.</div>"
+      },
+      {
+        "name": "탐사용 장비 For exploration",
+        "use": "",
+        "description": "<div>초대형 무기나 중형 무기를 장착할 수 없고, 전력 공격/해킹을 수행할 수 없습니다.</div><div>하지만 섬세한 작업을 할 수 있게 만들어진 장비 덕분에 메카가 수행하기엔 너무 작거나 민감한 장비도 작동시킬 수 있습니다.</div><div>또한, Type A는 수중 상태로 인해 감속되지 않고 비행할 수 있습니다.</div>"
+      }
+    ],
+    "core_system": {
+      "name": "FFT 타입-아쿠아 지원 코어 FFT Type-Aqua support core",
+      "active_name": "\"에드먼드\" 어뢰 \"Edmund\" torpedo",
+      "active_effect": "<p>인접한 빈 칸에 수륙양용 재밍 어뢰를 하나 배치합니다.</p><p><span>이 능력은 효율적이므로, 사용했다면 장면 종료시 1 CP를 회복합니다.</span></p>",
+      "activation": "Quick",
+      "description": "",
+      "deactivation": "",
+      "use": "",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "수중 제압 코드 Underwater suppression code",
+      "passive_effect": "<p>침투 선택지로 그물-망 신호를 사용할 수 있습니다.</p>",
+      "passive_actions": [
+        {
+          "name": "그물-망 신호 Net-net Signal",
+          "activation": "Invade",
+          "detail": "<p>대상에게 락온을 부여합니다.</p><p>만약 대상이 수중이거나 물 타일 위라면, 대상을 이동불가 상태로 만듭니다. 대상은 빠른 행동으로 시스템 내성 굴림을 굴려 성공시 이 이동불가를 끝낼 수 있습니다.</p>",
+          "cost": 0,
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": ""
+        }
+      ],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [
+        {
+          "name": "수륙양용 재밍 어뢰 amphibious jamming torpedo",
+          "type": "Drone",
+          "detail": "<p>이 드론들은 매 당신의 턴 시작시 당신을 제외한 가장 가까운 락온된 대상에게 향해서 6칸 비행합니다.</p><p>수중 타일과 물 표면 타일은 일반적으로 비행할 수 있지만, 그 외에 타일에서는 험지로 취급합니다.</p><p>최단 거리를 통해 대상에게 이동하며, 이때 마주치는 장애물과 지형을 우회합니다.</p><p>수륙양용 재밍 어뢰가 충돌하거나 파괴되면, 방출 범위 1 안의 모든 캐릭터는 시스템 내성 굴림을 굴려 실패시 다음 대상의 턴 종료시까지 교란됩니다.</p><p>만약 그 캐릭터가 락온이 부여되어 있다면, 그 락온을 소모하고 내성 굴림을 실패로 만들 수 있습니다.</p>",
+          "size": 0.5,
+          "activation": "Quick",
+          "deactivation": "",
+          "recall": "",
+          "redeploy": "",
+          "instances": 1,
+          "cost": "0",
+          "armor": "",
+          "hp": "5",
+          "evasion": "8",
+          "edef": "8",
+          "heatcap": "",
+          "repcap": "",
+          "sensor_range": "",
+          "tech_attack": "",
+          "save": "",
+          "speed": "6",
+          "pilot": false,
+          "mech": false,
+          "actions": [],
+          "bonuses": [],
+          "synergies": [],
+          "counters": []
+        }
+      ],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "y_pos": 43
+  },
+  {
+    "id": "SpaceSherpa",
+    "license_id": "SherpaSherpaSherpa",
+    "source": "FFT",
+    "license_level": 2,
+    "name": "셰르파-S Sherpa Type S",
+    "mechtype": [
+      "Balanced"
+    ],
+    "variant": "셰르파 Sherpa",
+    "description": "<div>FFT는 전쟁이 끝난뒤 완전한 비무장 선언을 통해 탐사용 메크 네버에버를 계발하였다.</div><div>완전한 탐사용 메크인 네버에버는 제국 시절의 잔재를 없애고 순수한 탐사자의 모습으로 돌아가겠다는 의도가 담긴 메크였지만 이 우주에는 그러한 비-전투형 메크로는 한계가 있었고, 곧바로 수 많은 사상자와 피해가 있었다.</div><div>결국, 연방은 FFT에 대한 무장 제한 제약을 해지하게 되었고, 이후 개발된 기체인 셰르파는 기초적인 무장을 장비할 수 있다.</div><div>여전히 전투 모드에 대한 제약과 대형 무기 사용 금지 조약때문에 무장은 약하지만, 셰르파는 에베레스트의 다양한 확장성을 모티브를 받아 다양한 전용 타입을 양산하기로 하였다.</div><div>현재 이 프레임은 Type S, 우주 탐사 전문 형태이다.</div><div>함선과 여러 미사일등 장거리 투사체와 충돌 위험성이 있는 우주 쓰레기 등 다양한 변수가 있는 우주에서의 탐사를 대비하여, 연방의 최신 기술 중 하나인 GMS-MMIS(Multi-sector missile Interception System)의 프로토타입을 장비하였다.</div><div>또한 기존의 다소 약한 외장을 보강하여 추가 내구력을 확보했지만, 그로 인한 속도 감소가 발생했는데, 이는 <span>강화형 EVA 모듈을</span> 통해 해결했다.</div>",
+    "mounts": [
+      "Flex"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 7,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 3,
+      "sensor_range": 12,
+      "tech_attack": 0,
+      "save": 11,
+      "speed": 3,
+      "sp": 3
+    },
+    "traits": [
+      {
+        "name": "계승 Inheritance",
+        "use": "",
+        "description": "<div>만들어지거나 완전 수리시, 당신이 라이선스를 가지고 있는 아무 프레임의 특성 하나를 선택합니다.</div><div>다음 완전 수리전까지 그것을 얻습니다.</div>"
+      },
+      {
+        "name": "최적화된 EVA/비행 모듈 Optimized EVA/Fly Module",
+        "use": "",
+        "description": "<div>비행할때, 자신의 수직 이동 속도를 소모하여 수평 이동을 할 수 있고, 그 반대로도 할 수 있습니다.</div><div>단, 매 턴 최대 4칸만 이런 방식으로 전환할 수 있습니다.</div><div>또한 비행 이동을 허용하거나 비행 이동을 수행하는 시스템, 재능, 코어 보너스, 코어 파워, 특성을 사용할때, 열을 지불하지 않아도 됩니다.</div>"
+      },
+      {
+        "name": "탐사용 장비 For exploration",
+        "use": "",
+        "description": "<div>초대형 무기나 중형 무기를 장착할 수 없고, 전력 공격/해킹을 수행할 수 없습니다.</div><div>하지만 섬세한 작업을 할 수 있게 만들어진 장비 덕분에 메카가 수행하기엔 너무 작거나 민감한 장비도 작동시킬 수 있습니다.</div><div>또한, Type S는 진공 상태나 저중력 상태로 인해 감속되지 않고 비행할 수 있습니다.</div>"
+      }
+    ],
+    "core_system": {
+      "name": "FFT 타입-스페이스 지원 코어 FFT Type-Space support core",
+      "active_name": "\"라인홀드\" 반사장 \"Reinhold\" Reflection Barrier",
+      "active_effect": "<p>트리거 : 자신을 대상으로 스마트 또는 넥서스 무기를 제외한 원거리 무기 공격이 빗나갔을때.</p><p>즉시 자신으로부터 범위 10안의 대상 하나를 선택하고 원거리 공격을 시도합니다. 적중하면 자신을 향했던 공격의 피해와 효과를 그대로 자신이 적중시킨 대상에게 가합니다.</p><p>이 능력은 요격 반응 행동을 사용해 공격을 빗나가게 했을때, 추가 반응 행동으로 사용할 수 있습니다.(반응 행동 횟수 제한 무시)</p><p><span>이 능력은 효율적이므로, 사용했다면 장면 종료시 1 CP를 회복합니다.</span></p>",
+      "activation": "Reaction",
+      "description": "",
+      "deactivation": "",
+      "use": "",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "GMS - 다방면 미사일 요격 시스템 GMS - Multi-sector missile Interception System",
+      "passive_effect": "<p>요격 - 투사체와 요격 - 수류탄 반응 행동을 얻습니다.</p>",
+      "passive_actions": [
+        {
+          "name": "요격 - 투사체 interception - missile",
+          "activation": "Reaction",
+          "detail": "<p>원거리 공격 굴림을 굴려 상대의 원거리 무기의 명중 값을 대상으로 대결 판정을 합니다. 자신의 값이 높거나 같으면, 그 공격을 빗나가게 합니다.</p><p>만약 대상의 무기가 대형 또는 초대형 무기라면, 자신은 그 무기에 대해 확정 2(초대형이라면 4) 피해를 입습니다.</p>",
+          "cost": 0,
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": "<p>자신을 대상으로 스마트 또는 넥서스 무기를 제외한 원거리 무기 공격이 적중했을때.</p>"
+        },
+        {
+          "name": "요격 - 수류탄 interception - Grenade",
+          "activation": "Reaction",
+          "detail": "<p>원거리 공격 굴림을 굴려 상대의 내성 값을 대상으로 대결 판정을 합니다. 자신의 값이 높거나 같으면, 수류탄을 요격하여 모든 효과를 무효화합니다 (자신외의 대상에게도 적용).</p>",
+          "cost": 0,
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": "<p>자신이 적대적인 캐릭터의 수류탄으로 인해 영향받아야 할때.</p>"
+        }
+      ],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "y_pos": 43
+  },
+  {
+    "id": "coldSherpacoldSherpa",
+    "license_id": "SherpaSherpaSherpa",
+    "source": "FFT",
+    "license_level": 2,
+    "name": "셰르파-C Sherpa Type C",
+    "mechtype": [
+      "Balanced"
+    ],
+    "variant": "셰르파 Sherpa",
+    "description": "<div>FFT는 전쟁이 끝난뒤 완전한 비무장 선언을 통해 탐사용 메크 네버에버를 계발하였다.</div><div>완전한 탐사용 메크인 네버에버는 제국 시절의 잔재를 없애고 순수한 탐사자의 모습으로 돌아가겠다는 의도가 담긴 메크였지만 이 우주에는 그러한 비-전투형 메크로는 한계가 있었고, 곧바로 수 많은 사상자와 피해가 있었다.</div><div>결국, 연방은 FFT에 대한 무장 제한 제약을 해지하게 되었고, 이후 개발된 기체인 셰르파는 기초적인 무장을 장비할 수 있다.</div><div>여전히 전투 모드에 대한 제약과 대형 무기 사용 금지 조약때문에 무장은 약하지만, 셰르파는 에베레스트의 다양한 확장성을 모티브를 받아 다양한 전용 타입을 양산하기로 하였다.</div><div>현재 이 프레임은 Type C, 한랭지에서의 탐사시 도움되는 기능이 추가된 상태다.</div><div>생존을 위한 여러 관리 시스템을 내장되었고, 그 탓에 해킹기능과 대전자전 성능이 저하되었다.</div><div>또한 한랭지의 우주 생물과 얼음 지형등을 극복하기 위해 핵융합 토치가 내장되었다. 탐사시에는 광원 확보 및 열 공급, 그리고 지형 파괴용으로 사용되며, 유사시 전투용으로도 사용할 수 있다.</div><div>추운 환경을 고려해 코어 냉각 장비를 포기하고 추가 내장재를 장비해 내구력이 향상되었으며, 소형 3D 프린터를 내장해 야영지 건설 및 엄폐물 확보가 가능해졌다.</div>",
+    "mounts": [
+      "Main"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 6,
+      "heatcap": 3,
+      "repcap": 3,
+      "sensor_range": 8,
+      "tech_attack": -1,
+      "save": 10,
+      "speed": 4,
+      "sp": 3
+    },
+    "traits": [
+      {
+        "name": "계승 Inheritance",
+        "use": "",
+        "description": "<div>만들어지거나 완전 수리시, 당신이 라이선스를 가지고 있는 아무 프레임의 특성 하나를 선택합니다.</div><div>다음 완전 수리전까지 그것을 얻습니다.</div>"
+      },
+      {
+        "name": "다목적 3D 프린터 Multi-purpose 3D Printer",
+        "use": "Turn",
+        "description": "<div>4으로 시작하고 1까지 줄어들 수 있는 머테리얼 주사위를 얻습니다.</div><div>이 주사위는 당신이 이 특성의 행동을 사용할때마다 1씩 감소하며, 1까지 줄어들면 사용할 수 없습니다.</div><div>이 특성이 제공하는 행동은 한턴에 한번만 수행할 수 있습니다.</div><div>당신이 수리 점수를 사용해서 HP나 구조 피해를 회복할때, 머테리얼 주사위도 복구됩니다.</div>",
+        "actions": [
+          {
+            "name": "임시 장갑 Temporary armor",
+            "activation": "Quick",
+            "detail": "<div>다음 구조 피해를 입기 전까지 장갑 +2를 얻습니다. (다른 장갑 보너스와 중첩되지 않습니다)</div><div>장면이 종료하거나, 장갑 관통 피해를 입거나 화재 피해를 입으면 이 능력으로 얻은 장갑을 잃습니다.</div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          },
+          {
+            "name": "등반 장치 climbing device",
+            "activation": "Quick",
+            "detail": "<div>자신이 있는 타일에 크기 0.5의 등반 장치를 배치합니다.</div><div>이 등반 장치가 있는 칸에서 모든 0.5 크기의 메카나 파일럿은 최대 3칸까지 다른 벽이나 이동속도 소모 없이 등반할 수 있습니다. (만약 이동을 끝낸다면 그 자리에서 등반중인 상태로 남습니다.)</div><div>등반 장비는 장면 종료시에 파괴됩니다.</div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          },
+          {
+            "name": "완전 엄폐물 Hard Cover",
+            "activation": "Quick",
+            "detail": "<div>인접한 빈 칸에 크기 1의 지형 물체를 설치합니다.</div><div>만약 자신이 한랭지, 눈지대, 얼음 지형 위에 있다면, 이 행동을 하는데 머테리얼 주사위를 소모하지 않습니다.</div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          }
+        ],
+        "counters": [
+          {
+            "id": "MM3dDDDICE",
+            "name": "머테리얼 주사위",
+            "min": "1",
+            "max": "4",
+            "default_value": "4"
+          }
+        ]
+      },
+      {
+        "name": "탐사용 장비 For exploration",
+        "use": "",
+        "description": "<div>초대형 무기나 중형 무기를 장착할 수 없고, 전력 공격/해킹을 수행할 수 없습니다.</div><div>하지만 섬세한 작업을 할 수 있게 만들어진 장비 덕분에 메카가 수행하기엔 너무 작거나 민감한 장비도 작동시킬 수 있습니다.</div><div>또한, Type C는 한랭지와 빙판 지역 효과에 대해 원한다면 무시할 수 있습니다.</div>"
+      }
+    ],
+    "core_system": {
+      "name": "FFT 타입-콜드 지원 코어 FFT Type-Cold support core",
+      "active_name": "\"고\" 지진 파동포 \"Go\" ",
+      "active_effect": "<p>범위 5 안에 폭발 범위 2 영역을 지정하고 유탄을 발사합니다.</p><p>해당 범위안의 모든 지표면 타일은 장면 종료시까지 험지가 되며, 지표면보다 높은 지형은 붕괴하여 높이가 한 단계 낮아집니다.</p><p>물체는 20 AP 피해를 입으며, 만약 이 피해로 파괴될시 지형처럼 붕괴됩니다.</p><p>자신보다 크거나 같은 붕괴된 지형이나 물체와 인접한 캐릭터는 선체 내성 굴림을 굴려 실패시 파뭍힙니다.</p><p>파뭍힌 캐릭터는 모든 민첩 내성 판정에 자동으로 실패하며, 넘어지고 이동불가, 감속, 완전 엄폐 효과를 받으며, 근접이나 원거리 공격을 수행할 수 없게 됩니다.</p><p>파뭍힌 캐릭터는 전력 행동으로 선체 내성 굴림을 굴려 빠져나올려고 시도할 수 있습니다. 한랭지라면 이 판정에 난이도를 하나 받습니다.</p>",
+      "activation": "Quick",
+      "description": "",
+      "deactivation": "",
+      "use": "",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "K16X8000 일회용 핵융합 절단기 K16X8000 Disposable Fusion Cutter",
+      "passive_effect": "<p>\"엄\" 핵융합 절단기를 장비합니다.</p>",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [
+        "smallFusion CutterFusion Cutter"
+      ],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "y_pos": 43
+  },
+  {
+    "id": "HEATSherpaHEATSherpa",
+    "license_id": "SherpaSherpaSherpa",
+    "source": "FFT",
+    "license_level": 2,
+    "name": "셰르파-H Sherpa Type H",
+    "mechtype": [
+      "Balanced"
+    ],
+    "variant": "셰르파 Sherpa",
+    "description": "<div>FFT는 전쟁이 끝난뒤 완전한 비무장 선언을 통해 탐사용 메크 네버에버를 계발하였다.</div><div>완전한 탐사용 메크인 네버에버는 제국 시절의 잔재를 없애고 순수한 탐사자의 모습으로 돌아가겠다는 의도가 담긴 메크였지만 이 우주에는 그러한 비-전투형 메크로는 한계가 있었고, 곧바로 수 많은 사상자와 피해가 있었다.</div><div>결국, 연방은 FFT에 대한 무장 제한 제약을 해지하게 되었고, 이후 개발된 기체인 셰르파는 기초적인 무장을 장비할 수 있다.</div><div>여전히 전투 모드에 대한 제약과 대형 무기 사용 금지 조약때문에 무장은 약하지만, 셰르파는 에베레스트의 다양한 확장성을 모티브를 받아 다양한 전용 타입을 양산하기로 하였다.</div><div>현재 이 프레임은 Type H, 고온 지대에서의 활동을 위해 고열과 화재에 대비한 프레임이다.</div><div>방열을 위해 냉각 시스템이 다수 내장되었고, 열로 인한 피해를 대신 에너지로 바꿀 수 있게 열 에너지를 흡수하는 시스템도 내장되었다.</div><div>하지만 그 탓으로 속도와 회피력이 낮아져 적의 공격을 피하기 힘들어졌다.</div><div>센서 장비를 빼고 시스템 복잡성을 낮췄음에도 불구하고 기동력을 살리기 힘들어지자, 특단의 조치로 연방 내부에서 위험성으로 인해 연구가 중지된 HA사의 이중 코어 시스템의 일부를 차용하여 TH, 트윈하트 코어가 내장되었다.</div><div>외부의 열을 오히려 이용하여 에너지원을 삼는다는 그 원리에 다들 열 관리에 대한 난색을 표했지만, 테스트 파일럿과 FFT 4팀의 강력한 추천으로 결국 개발되어 양산됬다.</div>",
+    "mounts": [
+      "Flex"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 6,
+      "edef": 8,
+      "heatcap": 8,
+      "repcap": 5,
+      "sensor_range": 3,
+      "tech_attack": -1,
+      "save": 9,
+      "speed": 3,
+      "sp": 3
+    },
+    "traits": [
+      {
+        "name": "계승 Inheritance",
+        "use": "",
+        "description": "<div>만들어지거나 완전 수리시, 당신이 라이선스를 가지고 있는 아무 프레임의 특성 하나를 선택합니다.</div><div>다음 완전 수리전까지 그것을 얻습니다.</div>"
+      },
+      {
+        "name": "1",
+        "use": "",
+        "description": "<div>1</div>"
+      },
+      {
+        "name": "탐사용 장비 For exploration",
+        "use": "",
+        "description": "<div>초대형 무기나 중형 무기를 장착할 수 없고, 전력 공격/해킹을 수행할 수 없습니다.</div><div>하지만 섬세한 작업을 할 수 있게 만들어진 장비 덕분에 메카가 수행하기엔 너무 작거나 민감한 장비도 작동시킬 수 있습니다.</div><div>또한, Type H는 고온과 화재 지역에 대한 효과에 <span>대해 원한다면 무시할 수 있고, 노출 상태가 아니라면 용암 지대에서 피해를 무시할 수 있습니다.</span></div>"
+      }
+    ],
+    "core_system": {
+      "name": "FFT 타입-히트 지원 코어 FFT Type-Heat support core",
+      "active_name": "\"조지\" \"George\"",
+      "active_effect": "",
+      "activation": "",
+      "description": "",
+      "deactivation": "",
+      "use": "",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "트윈하트 시스템 Twin-Heart System",
+      "passive_effect": "<p>Type H는 별개의 열 한계치가 존재합니다. 기존 열 한계치와 별개로, 이 한계치는 일반적인 상황에서는 열을 받지 않지만, 열을</p>",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "y_pos": 43
+  }
+]

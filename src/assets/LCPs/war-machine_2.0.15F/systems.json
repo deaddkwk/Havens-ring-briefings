@@ -1,0 +1,709 @@
+[
+  {
+    "id": "91644f1c-5ecc-45b3-972b-ecd8e12f84c9",
+    "name": "초진동 방출 장갑 High-Vibrancy Emission Armor",
+    "source": "EM",
+    "license": "IVLIVS 율리우스",
+    "license_id": "6bd0bbd5-9c83-4062-a19d-5c6780657c71",
+    "license_level": 1,
+    "effect": "<div>1/라운드, 물리 피해를 입기 전, 반응 행동을 사용해서 피해를 열로 치환할 수 있습니다. 만약 남은 열 한계치 보다 피해가 크다면, 열 한계치에 도달할 만큼만 치환합니다.</div>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "UNIQUE",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ],
+    "actions": [
+      {
+        "name": "초진동 방출 High-Vibrancy Emit",
+        "activation": "Reaction",
+        "detail": "<div>피해를 열로 치환할 수 있습니다. 만약 남은 열 한계치 보다 피해가 크다면, 열 한계치에 도달할 만큼만 치환합니다.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "1/round",
+        "init": "",
+        "trigger": "<div>물리 피해를 입기 전.</div>"
+      }
+    ]
+  },
+  {
+    "id": "560c8d94-6cdc-4f3c-ac20-53eb49e6b4d9",
+    "name": "플레임 헬 시스템 Flame Hell System",
+    "source": "EM",
+    "license": "IVLIVS 율리우스",
+    "license_id": "6bd0bbd5-9c83-4062-a19d-5c6780657c71",
+    "license_level": 2,
+    "effect": "<div>자신과 충돌한 캐릭터는 공학 내성을 굴려 실패시 열 2점을 받습니다. 한번 열을 받은 캐릭터는 다음 라운드 시작시까지 이 시스템에 면역이 됩니다.</div>",
+    "type": "System",
+    "sp": "1",
+    "description": ""
+  },
+  {
+    "id": "e0656ea0-a2bd-45de-8767-526919e229fd",
+    "name": "전체 프레임 보강 FULL-CHASSIS REINFORCEMENT",
+    "source": "EM",
+    "license": "IVLIVS 율리우스",
+    "license_id": "6bd0bbd5-9c83-4062-a19d-5c6780657c71",
+    "license_level": 2,
+    "effect": "<div>당신이 충격 대비를 사용했을때, 다음 중 하나를 선택할 수 있습니다.</div><ul><li><div>인내 : 당신은 당신의 다음 턴 시작시까지, 턴마다 자신을 향한 적중한 첫 공격의 피해에 저항을 얻을 수 있습니다.</div></li><li><div>대담 : 당신은 다음 당신의 턴에 프로토콜과 자유 행동을 수행할 수 있습니다.</div></li><li><div>규율 : 당신은 공격을 처리하고 나서, 자신이 부여하지 않은 자신의 상태 이상 하나를 지웁니다.</div></li></ul>",
+    "type": "System",
+    "sp": "3",
+    "description": "<div>HA’s Full-Chassis Reinforcement is a total mech conversion that provides additional defense layers and redundant systems to be engaged when a mech is forced to weather extreme stress.</div>"
+  },
+  {
+    "id": "7ce32306-3bdb-4ca2-94b9-915ce9c8ec1f",
+    "name": "초과충전기 ULTRACHARGER",
+    "source": "EM",
+    "license": "IVLIVS 율리우스",
+    "license_id": "6bd0bbd5-9c83-4062-a19d-5c6780657c71",
+    "license_level": 3,
+    "effect": "<div>당신이 과충전을 통한 행동을 수행할때, 그 모든 굴림에 +1 정확도를 부여합니다.</div>",
+    "type": "System",
+    "sp": "2",
+    "description": ""
+  },
+  {
+    "id": "2bc5a7b0-04be-4a5b-858c-cc638feb8524",
+    "name": "긴급 반응로 안정화 Emergency Reactor Stabilizer",
+    "source": "EXOTIC",
+    "license": "",
+    "license_id": "",
+    "license_level": 1,
+    "effect": "<div>당신의 기체가 멜트다운을 하려고 할때, 당신은 빠른 행동으로 공학 판정을 시도해서 이 멜트다운을 멈추려고 할 수 있습니다. 당신의 기체의 스트레스가 1 이상이면, 성공시 멜트다운을 멈춥니다. 당신의 기체의 스트레스가 0이라면, 성공시 멜트다운을 멈추지는 않지만, 다음 턴 종료시까지 멜트다운을 미룹니다. 이렇게 미룬 멜트다운도 다시 미룰 수 있습니다.</div>",
+    "type": "System",
+    "sp": "",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "UNIQUE",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_exotic",
+        "name": "EXOTIC GEAR",
+        "description": "EXOTIC GEAR is a general tag for equipment that exists outside the traditional licensing system.",
+        "filter_ignore": true,
+        "val": 0
+      }
+    ]
+  },
+  {
+    "id": "3b49fd40-3d28-4eee-987c-38e2cdaef890",
+    "name": "전자 연막 폭발물 Electric Smoke Charges",
+    "source": "EM",
+    "license": "Lucius 루키우스 ",
+    "license_id": "15cf548b-bd30-4d1a-8892-e06fbf4429d8",
+    "license_level": 2,
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_grenade",
+        "name": "Grenade",
+        "description": "As a quick action, this explosive or other device can be thrown to a space within line of sight and the specified Range."
+      },
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 3
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_quick_action",
+        "name": "Quick Action",
+        "description": "This system requires a quick action to Activate."
+      },
+      {
+        "id": "tg_mine",
+        "name": "Mine",
+        "description": "As a quick action, this device can be planted in an adjacent, free and valid space on any surface, but not adjacent to any other mines. Upon deployment, it arms at the end of the deploying character’s turn and – unless otherwise specified – is triggered when any character enters an adjacent space. Characters leaving an adjacent space will not trigger a mine. Once triggered, a mine creates a Burst attack starting from the space in which it was placed. Mines within a character’s Sensors can be detected by making a successful Systems check as a quick action, otherwise they are Hidden and can’t be targeted. Detected mines can be disarmed from adjacent spaces by making a successful Systems check as a quick action; the attempt takes place before the mine detonates, and on a failure, the mine detonates as normal."
+      }
+    ],
+    "actions": [
+      {
+        "name": "반짝 수류탄 glitter granade",
+        "activation": "Quick",
+        "detail": "<div>범위 5안의 지역에 폭발 범위 1 수류탄을 던집니다. 범위 내 캐릭터들은 모두 시스템 내성을 굴려 실패시 락온되고 열 2점을 받습니다.</div><div>생체 캐릭터는 열 대신 3 에너지 피해를 입습니다.</div>",
+        "cost": "1",
+        "pilot": false,
+        "range": [
+          {
+            "type": "Thrown",
+            "val": 5
+          },
+          {
+            "type": "Burst",
+            "val": 1
+          }
+        ],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "deployables": [
+      {
+        "name": "충격 연막 지뢰 Shock Smoke Mine",
+        "type": "Mine",
+        "detail": "<div>격발시 폭발 범위 2 안의 모든 캐릭터들은 락온을 받고, 열 2점을 받습니다.</div><div>생물 캐릭터는 열 대신 3 에너지 피해를 입습니다.</div>",
+        "activation": "Quick",
+        "deactivation": "",
+        "recall": "",
+        "redeploy": "",
+        "instances": 1,
+        "cost": 1,
+        "armor": "",
+        "hp": "",
+        "evasion": "",
+        "edef": "",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "",
+        "pilot": false,
+        "mech": false
+      }
+    ]
+  },
+  {
+    "id": "f4ce66f0-5cfa-48f3-a51e-e6d96d5b5fd1",
+    "name": "플랜 B 타겟팅 시스템 PLAN B Targeting System",
+    "source": "EM",
+    "license": "Lucius 루키우스 ",
+    "license_id": "15cf548b-bd30-4d1a-8892-e06fbf4429d8",
+    "license_level": 2,
+    "effect": "<div>1/라운드, 자신의 단일 대상 원거리 공격이 빗나갔을때, 대상과 인접한 캐릭터 하나에게 자유 행동으로 다시 그 무기로 공격할 수 있습니다. 이때, 장전이나 제한, 포격 태그를 무시하고 소모하지 않습니다.</div>",
+    "type": "System",
+    "sp": "3",
+    "description": ""
+  },
+  {
+    "id": "0fd4fab7-01d0-4604-9a7a-c8952cf15f0f",
+    "name": "가학성 교육 프로그램 Sadism Education Program",
+    "source": "EM",
+    "license": "Lucius 루키우스 ",
+    "license_id": "15cf548b-bd30-4d1a-8892-e06fbf4429d8",
+    "license_level": 3,
+    "effect": "<div>이 시스템은 NHP가 장착되어 있는 기체만 장착할 수 있고, NHP가 파괴되면 같이 파괴됩니다.</div><div>1/턴, 다른 대상에게 무기로 피해를 입히거나 내성 굴림을 강요하여 대상이 내성 굴림을 실패하면 열 1점을 지웁니다.</div><div>이 능력이 발동될때마다, 다음 케스케이드 판정시 굴림 값에 -1 합니다. (최대 4 감소, 주사위 값 최소 1)</div>",
+    "type": "System",
+    "sp": "2",
+    "description": ""
+  },
+  {
+    "id": "7d1593f8-0e5f-4aa0-bf6f-7e2948cb4515",
+    "name": "\"화약 원숭이\" 탄약고 \"Powder Monkey\" Ammo Depot",
+    "source": "OEG",
+    "license": "모건 Morgan",
+    "license_id": "be1defb8-b050-4424-9e8d-ec0771ebddb8",
+    "license_level": 3,
+    "effect": "<div>충전을 소모하고 인접한 빈 공간에 탄약고를 배치합니다.</div>",
+    "type": "Deployable",
+    "sp": "3",
+    "description": "<div>Too big to properly interface with internal autoloaders, IPS-N Schedule 4 Hyperdense Neutron Shells necessitate deployment as a separate structure, where flash printers and in-built subalterns quickly construct a loading station to feed this overpowered ammunition into adjacent weapon emplacements. IPS-N would like to note that usage of these shells automatically voids the warranty of your weapons.</div>",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 1
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_deployable",
+        "name": "Deployable",
+        "description": "This system is an object that can be deployed on the field. Unless otherwise specified, it can be deployed in an adjacent, free and valid space as a quick action, and has 5 Evasion and 10 HP per Size."
+      },
+      {
+        "id": "tg_quick_action",
+        "name": "Quick Action",
+        "description": "This system requires a quick action to Activate."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "\"화약 원숭이\" 탄약고 \"Powder Monkey\" Ammo Depot",
+        "type": "탄약고",
+        "detail": "<div>탄약고는 4회분의 탄약이 있습니다.</div><div>1/턴, 탄약고와 인접한 아군 캐릭터는 공격할때 탄약 1회분을 소모하고 3점의 추가 피해와 \"적중시: 대상은 넘어집니다.\"를 얻습니다.</div><div>만약 탄약고가 파괴되면 폭발 범위 2 공간에 폭발이 발생합니다. 이 폭발에 영향받은 캐릭터들은 민첩 내성 굴림을 굴려 실패시 1d6+3 AP 폭발 피해, 성공시 절반의 피해를 입습니다. 물체와 배치물은 자동으로 내성에 실패합니다.</div>",
+        "size": 0.5,
+        "activation": "Quick",
+        "deactivation": "",
+        "recall": "",
+        "redeploy": "",
+        "instances": 1,
+        "cost": 1,
+        "armor": "",
+        "hp": "10",
+        "evasion": "5",
+        "edef": "5",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "",
+        "pilot": false,
+        "mech": false
+      }
+    ]
+  },
+  {
+    "id": "e8383c14-f194-41c1-b31a-9b92fc3fddcf",
+    "name": "클랩트랩 Claptrap",
+    "source": "OEG",
+    "license": "모건 Morgan",
+    "license_id": "be1defb8-b050-4424-9e8d-ec0771ebddb8",
+    "license_level": 2,
+    "effect": "<div>빠른 행동으로, 클랩트랩을 센서내에 시야 안 빈 공간에 배치합니다.</div>",
+    "type": "Deployable",
+    "sp": "2",
+    "description": "<div>Named after the distinctive clicking sound generated by the repurposed anti-grav disk center to its construction, the Claptrap is mostly used by irregular forces as anti-chassis traps in the cramped corridors of ships, where the rhythmic pounding of a vessel’s engine, combined with the natural sound of a frame moving about, masks the clicking sound of the trap until it is too late.</div>",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_deployable",
+        "name": "Deployable",
+        "description": "This system is an object that can be deployed on the field. Unless otherwise specified, it can be deployed in an adjacent, free and valid space as a quick action, and has 5 Evasion and 10 HP per Size."
+      },
+      {
+        "id": "tg_quick_action",
+        "name": "Quick Action",
+        "description": "This system requires a quick action to Activate."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "클랩트랩 Claptrap",
+        "type": "함정",
+        "detail": "<div>이 함정은 파괴되기전까지 폭발 범위 2 공간을 만듭니다.</div><div>해당 공간안의 캐릭터들은 감속 상태가 됩니다. 만약 클랩트랩이 파괴되면, 모든 범위 안의 캐릭터들은 선체 내성 굴림을 굴려 실패시 영역의 중심으로 당겨집니다. 당신은 오직 하나의 클랩트랩만을 설치할 수 있고, 새로운 클랩트랩을 배치하면 기존의 것은 아무 효과 없이 파괴됩니다.</div>",
+        "size": 0.5,
+        "activation": "Quick",
+        "deactivation": "",
+        "recall": "",
+        "redeploy": "",
+        "instances": 1,
+        "cost": 1,
+        "armor": "",
+        "hp": "5",
+        "evasion": "5",
+        "edef": "5",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "",
+        "pilot": false,
+        "mech": false
+      }
+    ]
+  },
+  {
+    "id": "6741984f-0545-4900-9c82-2f67bcc1e451",
+    "name": "오스-언 하급 분대 OS-Un Subaltern Squad",
+    "source": "OEG",
+    "license": "모건 Morgan",
+    "license_id": "be1defb8-b050-4424-9e8d-ec0771ebddb8",
+    "license_level": 2,
+    "effect": "<div>빠른 행동으로, 하급 로봇 분대를 센서내에 시야 안 빈 공간에 배치합니다. 이동하는 시간이 걸리기 때문에, 즉시 배치되지 않고 다음 자신의 턴 시작시 배치됩니다.</div>",
+    "type": "Deployable",
+    "sp": "2",
+    "description": "<div>OS-Un are IPS-N standard loading subaltern patterns, designed for usage in docking bays for moving goods and lifting crates. While perfectly innocuous out of the box, a series of unofficial hacks and modifications turns them into combat-capable units, turning their powerful servos to the task of dragging a mech off their feet, their cheap construction allowing them to compensate for their lack of in-built combat capability with numbers.</div>",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_deployable",
+        "name": "Deployable",
+        "description": "This system is an object that can be deployed on the field. Unless otherwise specified, it can be deployed in an adjacent, free and valid space as a quick action, and has 5 Evasion and 10 HP per Size."
+      },
+      {
+        "id": "tg_quick_action",
+        "name": "Quick Action",
+        "description": "This system requires a quick action to Activate."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "오스-언 하급 분대 OS-Un Subaltern Squad",
+        "type": "하급 분대",
+        "detail": "<div>하급 분대는 장애물로 판정되지 않고 평평합니다.</div><div>만약 하급 분대의 위치에 서 있다면, 적대적인 캐릭터들은 그곳을 험지로 취급하고 비-의도적 이동이나 넘어짐을 피하기 위한 내성 굴림과 판정에 +1 난이도를 받습니다, 그리고 넘어진 캐릭터는 해당 지역에서 일어날 수 없습니다.</div><div>당신은 오직 한 분대만 배치할 수 있으며, 새로운 분대를 배치하면 기존의 것은 파괴됩니다.</div>",
+        "size": 2,
+        "activation": "",
+        "deactivation": "",
+        "recall": "",
+        "redeploy": "",
+        "instances": 1,
+        "cost": 1,
+        "armor": "",
+        "hp": "15",
+        "evasion": "8",
+        "edef": "5",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "",
+        "pilot": false,
+        "mech": false
+      }
+    ]
+  },
+  {
+    "id": "ff330958-3d8e-416e-86e7-46c7bcfed5ff",
+    "name": "P.레이트 시스템 P.late System",
+    "source": "EXOTIC",
+    "license": "",
+    "license_id": "",
+    "license_level": 1,
+    "effect": "<div>이 시스템은 안정성을 위해서 여러 기능을 차단합니다. 안전 모드로 인해 메카는 과부하를 수행할 수 없게 되고, 이동 속도가 1 감소합니다.</div><div>대신, 폭발 피해에 저항을 얻고, +2 최대 열 한계치를 얻습니다.</div><div>이 장갑은 파괴되었을때, 억제되었던 에너지를 한번에 방출하여 엄청난 운동력을 얻습니다. 장면 종료시까지, 1/턴, 부스트를 자유 행동으로 사용할 수 있습니다. 하지만 이 장비는 파괴되었을때 휴식 중 수리가 불가능합니다.</div><div>원한다면, 당신은 이 장비를 빠른 행동으로 파괴할 수 있습니다.</div>",
+    "type": "System",
+    "sp": "",
+    "description": "<div>원 펑츄에이션에서 만든 이 시스템은 자칫 거추장스러운 모습을 하고 있습니다. 반응로와 직접 연결해야만 하는 내장 프레임에, 외부에 장착하는 초밤 아머는 기체를 둔하게 만듭니다. 하지만 그 만큼 상당한 내구력을 제공하고, 또한 파괴되었을때 통제되던 반응로의 기능을 약 34% 증가시키는 효과가 있는것으로 알려져 있습니다.</div>",
+    "actions": [
+      {
+        "name": "P.레이트 해방 P.late Release",
+        "activation": "Quick",
+        "detail": "<div>P.레이트 시스템을 파괴합니다.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [
+      {
+        "id": "speed",
+        "val": -1,
+        "damage_types": [],
+        "range_types": [],
+        "weapon_types": [],
+        "weapon_sizes": [],
+        "overwrite": false,
+        "replace": false
+      },
+      {
+        "id": "heatcap",
+        "val": 2,
+        "damage_types": [],
+        "range_types": [],
+        "weapon_types": [],
+        "weapon_sizes": [],
+        "overwrite": false,
+        "replace": false
+      }
+    ]
+  },
+  {
+    "id": "ca73a070-515c-4efb-853c-a3da1e10c60d",
+    "name": "내면의 짐승 The Beast Inside",
+    "source": "EM",
+    "license": "Rōmulus/Remus 로물루스/레무스",
+    "license_id": "1d4662a2-0ef8-4081-aab8-41c0913dee26",
+    "license_level": 2,
+    "effect": "<div>다음 침투 옵션 2가지를 얻습니다.</div>",
+    "type": "Tech",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ],
+    "actions": [
+      {
+        "name": "찢고=뜯어내라 RIP=TEAR",
+        "activation": "Invade",
+        "detail": "<div>대상과 대상에게 인접한 모든 캐릭터는 시스템 내성 굴림을 굴려 실패시 침투로 인해 받은 열과 같은 수치의 열을 받습니다. (대상은 한번 더 받음)</div><div>이 효과로 각 대상에게 라운드 당 한번만 열을 부여할 수 있습니다.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "핏물로=파묻어라 DROWN=BLOOD",
+        "activation": "Invade",
+        "detail": "<div>대상은 다음 대상의 턴 종료시까지, 모든 칸을 험지로 취급합니다. 이 효과는 험지를 물리적으로 무시하는 능력으로 무시할 수 없습니다.</div><div>이 효과를 받은 대상이 대상의 턴에 3칸 이상 이동하지 않으면, 대상은 대상의 턴 종료시 넘어집니다.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "38d3cb56-4879-4b58-a913-3671d0709f74",
+    "name": "무리 전술 Pack Tactics",
+    "source": "EM",
+    "license": "Rōmulus/Remus 로물루스/레무스",
+    "license_id": "1d4662a2-0ef8-4081-aab8-41c0913dee26",
+    "license_level": 1,
+    "effect": "<div>인접한 아군이 없는 대상이 자신의 아군에게 인접한 상태라면, 대상을 공격할때 +1 정확도를 얻습니다.</div>",
+    "type": "System",
+    "sp": "3",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ]
+  },
+  {
+    "id": "468da530-2dba-4e4f-8ad3-7c9a7d83043e",
+    "name": "다방면 추적 시스템 Global tracking system",
+    "source": "EM",
+    "license": "Rōmulus/Remus 로물루스/레무스",
+    "license_id": "1d4662a2-0ef8-4081-aab8-41c0913dee26",
+    "license_level": 1,
+    "effect": "<div>다음 침투 옵션 2가지를 얻습니다.</div>",
+    "type": "Tech",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ],
+    "actions": [
+      {
+        "name": "보름달 아래 Under the Full Moon",
+        "activation": "Invade",
+        "detail": "<div>다음 자신의 턴 시작시부터 턴 종료시까지, 대상은 향한 공격에 자신은 +1 정확도를 얻습니다.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "그림자 속으로 Back to the Shadow",
+        "activation": "Invade",
+        "detail": "<div>자신은 은신 행동을 자유 행동으로 수행합니다.</div><div>대상은 자신의 은신을 시야가 있더라도 찾아낼 수 없으며, 찾기 빠른 행동을 수행할 수 없습니다.</div><div>대상은 이 능력을 끝내기 위해서 빠른 행동으로 시스템 내성 굴림을 굴려 성공시 끝낼 수 있습니다.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "9b908559-b6b0-4277-82fc-56c6031aeaf2",
+    "name": "라이칸스로프-급 NHP LYCANTHROPE-Class NHP",
+    "source": "EM",
+    "license": "Rōmulus/Remus 로물루스/레무스",
+    "license_id": "1d4662a2-0ef8-4081-aab8-41c0913dee26",
+    "license_level": 3,
+    "effect": "<div>당신의 메카는 AI 태그를 얻고 언체이서블 비스트와 뒤를 봐라를 얻습니다.</div>",
+    "type": "AI",
+    "sp": "3",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_heat_self",
+        "name": "Heat {VAL} (Self)",
+        "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+        "val": 1
+      },
+      {
+        "id": "tg_ai",
+        "name": "AI",
+        "description": "A mech can only have one system with this tag installed at a time. Some AI systems grant the AI tag to the mech. A mech with the AI tag has an NHP or COMP/CON unit installed that can act somewhat autonomously. A pilot can choose to hand over the controls to their AI or take control back as a protocol. Their mech gains its own set of actions and reactions when controlled by an AI, but the pilot can’t take actions or reactions with it until the start of their next turn. AIs can’t benefit from talents, and have a small chance of cascading when they take structure damage or stress damage."
+      }
+    ],
+    "actions": [
+      {
+        "name": "언체이서블 비스트 활성화 Activate UNCHASEBLE beast",
+        "activation": "Protocol",
+        "detail": "<div>이번 턴, 자신이 반응 행동이나 교전을 무시하는 효과를 가진 이동을 수행했을때마다, 다음 공격에 +1 정확도를 얻습니다. 이 효과는 누적될 수 있습니다.</div><div>또한, 1/라운드, 자신이 반응 행동이나 교전을 무시하는 효과를 가진 이동을 수행하고 나서, 인접한 적대적인 캐릭터 하나에게 시스템 내성 굴림을 강요할 수 있습니다. 실패시 대상은 이동한 칸 수 만큼 에너지 피해를 입지만, 성공시 절반의 피해만 입습니다.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "뒤를 봐라 Watch Your Back",
+        "activation": "Free",
+        "detail": "<div>1/라운드, 당신은 당신과 인접한 적대적인 캐릭터 하나를 선택하고, 대상에게 인접한 빈 칸 하나를 추가로 선택합니다. 해당 칸을 향하여 대상과 인접을 유지한채 최단 경로로 이동합니다. 만약 인접을 유지한채 더 이상 이동할 수 없는 상태라면 이동을 끝납니다.</div><div>이 이동은 교전과 반응 행동을 유발하지 않습니다.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "4907d4e4-3806-4043-b12f-d3c922fb6b69",
+    "name": "방패 배열 드론 Shield Array Drone",
+    "source": "C&H",
+    "license": "사브뢰르 SABREUR",
+    "license_id": "54939565-2af3-44e9-b506-9f591d1db635",
+    "license_level": 2,
+    "effect": "<div>빠른 행동으로 인접한 빈칸에 배치하거나 회수할 수 있습니다. 이 드론은 크기 2지만 크기와 관련된 효과를 처리할때는 1/2으로 취급합니다.</div><div>당신의 이동, 비행, 그리고 순간이동을 따라하며, 유닛이나 물체의 이동을 막지 않고, 같은 공간을 점유할 수 있습니다.</div><div>당신에게 완전 엄폐를 제공하며, 그 드론 자신도 완전 엄폐를 얻습니다. 그리고 당신과 인접이나 겹친 상태를 끝내게 만드는 모든 종류의 강제 이동에 대해 면역을 얻습니다.</div>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "actions": [
+      {
+        "name": "드론 받아치기 Drone Parry",
+        "activation": "Reaction",
+        "detail": "<div>열 2점을 받고 방어 배열 드론을 당신과 인접한 다른 공간으로 이동시킵니다.</div><div>만약 대상에게 락온이 있다면 그것을 소모하고 열 2점을 받지 않을 수 있습니다.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "1/round",
+        "init": "",
+        "trigger": "<div>적대적인 캐릭터가 당신을 원거리의 공격 대상으로 선언했을때.</div>"
+      }
+    ],
+    "deployables": [
+      {
+        "name": "방어 배열 드론 Shield Array Drone",
+        "type": "Drone",
+        "detail": "<div>이 드론은 크기 2지만 크기와 관련된 효과를 처리할때는 1/2으로 취급합니다.</div><div>당신의 이동, 비행, 그리고 순간이동을 따라하며, 유닛이나 물체의 이동을 막지 않고, 같은 공간을 점유할 수 있습니다.</div><div>당신에게 완전 엄폐를 제공하며, 그 드론 자신도 완전 엄폐를 얻습니다. 그리고 당신과 인접이나 겹친 상태를 끝내게 만드는 모든 종류의 강제 이동에 대해 면역을 얻습니다.</div>",
+        "size": 2,
+        "activation": "",
+        "deactivation": "",
+        "recall": "",
+        "redeploy": "",
+        "instances": 1,
+        "cost": 1,
+        "armor": "0",
+        "hp": "5",
+        "evasion": "10",
+        "edef": "10",
+        "heatcap": "0",
+        "repcap": "0",
+        "sensor_range": "0",
+        "tech_attack": "0",
+        "save": "10",
+        "speed": "0",
+        "pilot": false,
+        "mech": false
+      }
+    ]
+  },
+  {
+    "id": "dd1a397c-e1bb-442c-801f-d6378979cd60",
+    "name": "회피 버니어 어레이 Evasive Vernier Array",
+    "source": "C&H",
+    "license": "사브뢰르 SABREUR",
+    "license_id": "54939565-2af3-44e9-b506-9f591d1db635",
+    "license_level": 3,
+    "effect": "<div>당신을 향한 근접 또는 원거리 공격이 빗나갔을때, 즉시 1칸 이동할 수 있습니다. 이 이동은 교전이나 반응 행동을 유발하지 않습니다. 만약 열 2점을 받으면 대신 3칸 이동할 수 있습니다.</div>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ]
+  },
+  {
+    "id": "b9c7b769-2d87-4baf-bfe7-57ced57833a7",
+    "name": "아르테미스-급 NHP ARTEMIS-Class NHP",
+    "source": "C&H",
+    "license": "사브뢰르 SABREUR",
+    "license_id": "54939565-2af3-44e9-b506-9f591d1db635",
+    "license_level": 3,
+    "effect": "<div>당신의 메카가 AI 태그를 얻고 아르테미스 프로토콜을 사용할 수 있게 됩니다.</div>",
+    "type": "System",
+    "sp": "3",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_ai",
+        "name": "AI",
+        "description": "A mech can only have one system with this tag installed at a time. Some AI systems grant the AI tag to the mech. A mech with the AI tag has an NHP or COMP/CON unit installed that can act somewhat autonomously. A pilot can choose to hand over the controls to their AI or take control back as a protocol. Their mech gains its own set of actions and reactions when controlled by an AI, but the pilot can’t take actions or reactions with it until the start of their next turn. AIs can’t benefit from talents, and have a small chance of cascading when they take structure damage or stress damage."
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_protocol",
+        "name": "Protocol",
+        "description": "This system can be activated as a free action, but only at the start of the user’s turn. Another action might be needed to deactivate it."
+      }
+    ],
+    "actions": [
+      {
+        "name": "아르테미스 프로토콜 Artemis Protocol",
+        "activation": "Protocol",
+        "detail": "<div>센서 안 시야 안 캐릭터 하나에게 사냥꾼의 징표를 줍니다. 징표를 가진 캐릭터는 당신에게 은신 효과를 받을 수 없으며, 당신이 징표를 가진 대상에게 공격할때 공격 굴림을 2번 굴려서 선택할 수 있습니다.</div><div>1/라운드, 당신은 징표 대상에게 치명타를 가하면 +1d6 추가 피해를 가합니다.</div><div>징표를 받은 캐릭터가 있는 상태에서 당신이 징표가 없는 대상에게 공격을 가하려 하면 +2 난이도를 받고 +2 열을 받습니다. 또한 당신은 징표를 가진 대상으로부터 의도적으로 멀어지려고 할 수 없습니다.</div><div>오직 한 캐릭터만 동시에 징표를 가질 수 있으며, 징표는 당신이 다른 대상을 파괴하거나, 항복시키거나, 전장에서 퇴각시키면 사라지며, 이렇게 되면 프로토콜로 다시 징표를 부여할 수 있습니다.</div><div>이미 징표가 있는 상태라면, 당신은 전력 행동으로 사냥꾼의 징표를 다른 대상에게 부여할 수 있습니다. 이 경우 기존 징표는 사라집니다.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "ssulmeongyong",
+    "name": "난관 극복 시스템 Difficulty Overcoming System",
+    "source": "FFT",
+    "license": "셰르파 Sherpa",
+    "license_id": "SherpaSherpaSherpa",
+    "license_level": 2,
+    "effect": "<div>자신은 이제 내성 굴림을 굴릴때 원한다면 정확도와 난이도를 모두 무시할 수 있습니다. (한쪽만 무시할 수 없음)</div>",
+    "type": "System",
+    "sp": "1",
+    "description": ""
+  }
+]

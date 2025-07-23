@@ -1,0 +1,188 @@
+[
+  {
+    "id": "4874b5e4-776c-4bf2-bcd4-5e974e0a4b89",
+    "name": "특작대 COMMANDO",
+    "terse": "Mech Combat is an intrinsically deadly environment for a pilot to be in, but Commandos thrive in this environment, using a bevy of technology and pure grit to do jobs that would kill lesser combatants.",
+    "description": "<div>Mech Combat is an intrinsically deadly environment for a pilot to be in, but Commandos thrive in this environment, using a bevy of technology and pure grit to do jobs that would kill lesser combatants.</div>",
+    "ranks": [
+      {
+        "name": "강철의 심장 HEART OF IRON",
+        "description": "<div>파일럿은 메카 전투 중 회피와 대전자전에 투지 만큼 보정(최대 20)을 받고, 체력이 5 증가합니다. 또한 메카 전투에서 처음으로 파일럿의 행동을 수행할때, 파일럿은 물리, 에너지, 폭발 피해 중 하나를 골라 저항을 얻습니다.</div>",
+        "bonuses": [
+          {
+            "id": "pilot_hp",
+            "val": 5,
+            "damage_types": [],
+            "range_types": [],
+            "weapon_types": [],
+            "weapon_sizes": [],
+            "overwrite": false,
+            "replace": false
+          }
+        ],
+        "exclusive": false
+      },
+      {
+        "name": "???",
+        "description": "<div>???</div>",
+        "exclusive": false
+      },
+      {
+        "name": "???",
+        "description": "<div>???</div>",
+        "exclusive": false
+      }
+    ]
+  },
+  {
+    "id": "14aced46-eacf-4ceb-ae59-ef3d29bba47d",
+    "name": "야전 의무병 FIELD MEDIC",
+    "terse": "No fireteam is complete without a trained medical expert. If you’re going to face mech-scale munitions on foot, you’d better have them on speed dial.",
+    "description": "<div>No fireteam is complete without a trained medical expert. If you’re going to face mech-scale munitions on foot, you’d better have them on speed dial.</div>",
+    "ranks": [
+      {
+        "name": "의료 킷 MEDIC KIT",
+        "description": "<div>3회분의 충전을 가진 의료킷을 가지고 있습니다. 당신은 1/라운드, 충전량을 1회 소모하고 자유 행동으로 자신 또는 인접한 생물 하나의 체력을 자신의 투지만큼 회복합니다. 충전은 완전 휴식을 하면 회복됩니다. 또한, 이제부터 파일럿 의료 관련 장비의 사용 횟수가 2회 늘어납니다.</div>",
+        "actions": [
+          {
+            "name": "응급처치 first aid",
+            "activation": "Free",
+            "detail": "<div>1/라운드, 충전량을 1회 소모하고 자유 행동으로 자신 또는 인접한 생물 하나의 체력을 자신의 투지만큼 회복합니다. 충전은 완전 휴식을 하면 회복됩니다.</div>",
+            "cost": "1",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          }
+        ],
+        "counters": [
+          {
+            "id": "a81f1c7a-3795-41ba-be0d-b9eeebca7131",
+            "name": "응급 처치 횟수 first aid counter",
+            "default_value": "3",
+            "max": "3",
+            "min": "0"
+          }
+        ],
+        "exclusive": false
+      },
+      {
+        "name": "???",
+        "description": "<div>???</div>",
+        "exclusive": false
+      },
+      {
+        "name": "???",
+        "description": "<div>???</div>",
+        "exclusive": false
+      }
+    ]
+  },
+  {
+    "id": "fb6a69b2-381f-420f-bd4a-21d3fd2359b7",
+    "name": "공작가 SABOTEUR",
+    "terse": "The Saboteur specializes in disabling enemy mechs in open combat, regardless of the danger posed by being exposed to weapons fire.",
+    "description": "<div><span>The Saboteur specializes in disabling enemy mechs in open combat, regardless of the danger posed by being exposed to weapons fire.</span></div>",
+    "ranks": [
+      {
+        "name": "소지의 가방 BAG OF TRICKS",
+        "description": "<div><span>당신이 이제 소지할 수 있는 파일럿 기어의 갯수가 1개 증가하고, 폭발물 기어의 사용 횟수가 2회 증가합니다. 또한, 파일럿으로 강습 행동을 할때 +1 정확도를 받습니다.</span></div>",
+        "exclusive": false
+      },
+      {
+        "name": "폭발물 강습 DETPACK RODEO",
+        "description": "<div><span>당신은 이제 빠른 행동으로 강습을 시도할 수 있게 되며, 강습 행동시 다음 선택지가 추가됩니다.</span></div><div><span>(이때, 내성 목표값은 10 + 투지입니다.)</span></div>",
+        "actions": [
+          {
+            "name": "장갑 파열 ARMOR PEEL",
+            "activation": "Quick",
+            "detail": "<div><span>당신이 가진 폭발물 기어의 사용 횟수 1회를 소모합니다. 대상은 선체 내성 굴림을 굴려 실패시 다음 대상의 턴 종료시까지 파쇄됩니다.</span></div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          },
+          {
+            "name": "반응로 충격 JAM VENTS",
+            "activation": "Quick",
+            "detail": "<div><span>당신이 가진 폭발물 기어의 사용 횟수 2회를 소모합니다. 대상은 공학 내성 굴림을 굴려 실패시 다음 대상의 턴 종료시까지 노출됩니다. 만약 이미 노출 상태라면 열 4점을 줍니다.</span></div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          }
+        ],
+        "exclusive": false
+      },
+      {
+        "name": "불 라이더 BULL RIDER",
+        "description": "<div><span>당신은 이제 강습중에 완전 엄폐 효과를 얻습니다. 또한 이제 다음 강습 선택지가 추가됩니다.</span></div>",
+        "actions": [
+          {
+            "name": "EMP 충격 폭탄 EMP DETPACK",
+            "activation": "Quick",
+            "detail": "<div><span>당신이 가진 폭발물 기어의 사용 횟수를 3회 소모합니다. 대상은 시스템 내성 굴림을 굴려 실패시 다음 대상의 턴 종료시까지 교란됩니다.</span></div><div><span>한번 이 능력을 사용하면 이번 장면 동안 대상은 이 효과에 대해 면역이 됩니다. </span></div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          },
+          {
+            "name": "균형장치 파괴공작 SABOTAGE GYROS",
+            "activation": "Quick",
+            "detail": "<div><span>당신이 가진 폭발물 기어의 사용 횟수를 3회 소모합니다. 대상은 시스템 내성 굴림을 굴려 실패시 다음 대상의 턴 종료시까지 기절됩니다.</span></div><div><span>한번 이 능력을 사용하면 이번 장면 동안 대상은 이 효과에 대해 면역이 됩니다. </span></div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          },
+          {
+            "name": "파일럿 사출 EJECT PILOT",
+            "activation": "Quick",
+            "detail": "<div><span>1/장면, 당신은 구조가 1개 남은 (또는 1개인) 대상의 내성 값에 대해 +1 난이도를 받고 시스템 판정을 굴립니다. 성공시, 대상은 당신이 선택한 기체로부터 5칸 이내에 공간에 사출됩니다.</span></div><div><span>그리고 당신은 대상의 기체를 탈취할 수 있습니다. 다음을 참조하세요.</span></div><ul><li><div>HASE - 파일럿의 것을 사용합니다.</div></li><li><div>행동 - NPC의 것만을 사용할 수 있습니다. 단, 파일럿의 재능은 사용할 수 있습니다.</div></li><li><div>상태이상 - 만약 특별한 경우(DM이 언급한 경우)가 아니라면, 당신은 손상 상태를 얻으며, 이 효과를 없앨 수 없습니다.</div></li></ul>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          }
+        ],
+        "exclusive": false
+      }
+    ]
+  },
+  {
+    "id": "TECHIETECHIETECHIE",
+    "name": "테키 TECHIE",
+    "terse": "The Techie always has their deck on hand, specializing in attacking the systems of mechs and mainframes alike with advanced attack algorithms.",
+    "description": "<div><span>The Techie always has their deck on hand, specializing in attacking the systems of mechs and mainframes alike with advanced attack algorithms.</span></div>",
+    "ranks": [
+      {
+        "name": "데커 DECKER",
+        "description": "<div><span>당신의 슈트는 이제 메카 밖에서 인접한 물건을 해킹할 수 있게 개조됩니다.</span></div><div><span>당신의 파일럿은 센서 범위 8을 얻으며, 침투 또는 강화를 빠른 행동으로 할 수 있습니다. 그러나 침투 선택지로 오직 파편 신호화만 사용할 수 있습니다.</span></div><div><span>당신은 이제 자신의 시스템 수치만큼 해킹 공격 보너스를 얻으며, 또한 그 수치만큼 대전자전 보너스를 얻습니다. 단, 이 보너스들은 다른 모든 보너스들과 중첩되지 않습니다.</span></div>",
+        "exclusive": false
+      },
+      {
+        "name": "???",
+        "description": "<div>???</div>",
+        "exclusive": false
+      },
+      {
+        "name": "???",
+        "description": "<div>???</div>",
+        "exclusive": false
+      }
+    ]
+  }
+]

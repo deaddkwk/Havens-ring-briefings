@@ -1,0 +1,716 @@
+[
+  {
+    "id": "0df33741-f316-4423-b044-b4a779fe68b3",
+    "name": "중력 단검 Gravity Dagger",
+    "source": "EM",
+    "license": "IVLIVS 율리우스",
+    "license_id": "6bd0bbd5-9c83-4062-a19d-5c6780657c71",
+    "license_level": 1,
+    "description": "<div>제국 베스핀 기지에서 만들어낸 인공 중력장 시스템 소형화 프로젝트는 많은 기업들을 놀라게 하였지만, 결국 함선이나 건물에 사용하기엔 인력이 충분하지 않았다. 하지만 베스핀 H-2 군사 공업 시설에서 해당 기술을 통해 만들어낸 EM-DC-01/W1 중력 단검은 전장에서 적의 진영에 빈틈을 만드는데 사용되었다. </div>",
+    "mount": "Auxiliary",
+    "type": "Melee",
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "on_hit": "<div>대상을 자신의 방향으로 1칸 당겨옵니다.</div>",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      },
+      {
+        "type": "Heat",
+        "val": 1
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_thrown",
+        "name": "THROWN {VAL}",
+        "description": "This melee weapon can be thrown at targets within {VAL} spaces. Thrown attacks follow the rules for melee attacks but are affected by cover; additionally, a thrown weapon comes to rest in an adjacent space to its target and must be retrieved as a free action while adjacent to that weapon before it can be used again.",
+        "val": 5
+      }
+    ]
+  },
+  {
+    "id": "66e2c266-6bf0-473e-a3e8-f6bb6c4e5e8a",
+    "name": "고열 츠바이헨더 Heat Zweihänder",
+    "source": "EM",
+    "license": "IVLIVS 율리우스",
+    "license_id": "6bd0bbd5-9c83-4062-a19d-5c6780657c71",
+    "license_level": 3,
+    "description": "",
+    "mount": "Heavy",
+    "type": "Melee",
+    "sp": "2",
+    "profiles": [
+      {
+        "name": "고열 츠바이헨더 (열 저장 상태) Heat Zweihänder (Heat Stock mode)",
+        "effect": "<div>이 무기의 사용 횟수는 0으로 시작하며, 장면이 종료될때마다 0으로 돌아옵니다.</div><div>당신이 열을 받아야 할때, 열 1점을 덜 입고 대신 이 무기의 사용 횟수를 1 늘립니다.</div><div>사용 횟수가 모두 가득 차면 더 이상 열을 감소시킬 수 없습니다.</div><div>이 무기는 사용 횟수가 없어도 공격할 수 있습니다.</div>",
+        "barrage": true,
+        "skirmish": true,
+        "cost": "1",
+        "on_hit": "<div></div>",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6+4"
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 2
+          }
+        ],
+        "actions": [
+          {
+            "name": "고열 츠바이헨더 활성화 Activate Heat Zweihänder",
+            "activation": "Quick",
+            "detail": "<div>무기를 방열 모드로 변경합니다.</div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_limited",
+            "name": "LIMITED {VAL}",
+            "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+            "val": 3
+          },
+          {
+            "id": "tg_unique",
+            "name": "UNIQUE",
+            "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+          }
+        ],
+        "on_attack": "<div></div>",
+        "on_crit": "<div></div>"
+      },
+      {
+        "name": "고열 츠바이헨더 (방열 모드) Heat Zweihänder (Radiation mode)",
+        "effect": "<div>이 무기는 공격시 사용 횟수를 원하는 만큼 추가로 사용할 수 있습니다. 추가로 소모한 사용 횟수 1점 당 자신에게 1 열을 가하고, 1 에너지 피해와 1 열을 추가 피해로 가합니다.</div><div>이 무기는 모든 사용 횟수를 소모하면 자동으로 열 저장 모드로 돌아갑니다.</div>",
+        "barrage": true,
+        "skirmish": true,
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "1d6+6"
+          },
+          {
+            "type": "Heat",
+            "val": 2
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 2
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_limited",
+            "name": "LIMITED {VAL}",
+            "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+            "val": 3
+          },
+          {
+            "id": "tg_heat_self",
+            "name": "HEAT {VAL} (SELF)",
+            "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+            "val": 2
+          },
+          {
+            "id": "tg_ap",
+            "name": "ARMOR-PIERCING (AP)",
+            "description": "Damage dealt by this weapon ignores Armor."
+          },
+          {
+            "id": "tg_unique",
+            "name": "UNIQUE",
+            "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "584317e5-f51e-43cc-af95-e56fbcf4ca67",
+    "name": "STG45 제국 돌격 소총 개량형 STG45 Empire Assault Rifle Enhanced",
+    "source": "EXOTIC",
+    "license": "",
+    "license_id": "",
+    "license_level": 1,
+    "description": "<div>STG 44 돌격 소총을 개량한 STG 45는 기존의 것과 큰 차이가 없어 보이지만, 향상된 조준 장치로 인해 조금 더 먼 사거리에서 유효한 피해를 가할 수 있게 되었으며, 기존의 탄보다 약 12% 더 많은 양의 장약을 사용해 직격시의 피해가 증가했습니다.</div>",
+    "mount": "Main",
+    "type": "Rifle",
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "2d6-3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 12
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_reliable",
+        "name": "Reliable {VAL}",
+        "description": "This weapon has some degree of self-correction or is simply powerful enough to cause damage even with a glancing blow. It always does {VAL} damage, even if it misses its target or rolls less damage. Reliable damage inherits other tags (such as AP) and base damage type but not tags that require a hit, such as Knockback.",
+        "val": 2
+      },
+      {
+        "id": "tg_exotic",
+        "name": "Exotic Gear",
+        "description": "EXOTIC GEAR is a general tag for equipment that exists outside the traditional licensing system.",
+        "filter_ignore": true
+      }
+    ]
+  },
+  {
+    "id": "f1e1b381-3dab-4756-b626-2622a7f602d0",
+    "name": "글로리안 미사일 Glorian Missile",
+    "source": "EM",
+    "license": "Lucius 루키우스 ",
+    "license_id": "15cf548b-bd30-4d1a-8892-e06fbf4429d8",
+    "license_level": 1,
+    "description": "",
+    "mount": "Heavy",
+    "type": "Launcher",
+    "sp": 0,
+    "effect": "<div>자신의 턴 종료시, 이 무기를 저번 자신의 턴 종료시 부터 사용하지 않았다면 이 무기를 장전할 수 있습니다.</div>",
+    "barrage": true,
+    "skirmish": true,
+    "on_attack": "<div></div>",
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "2d6+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 12
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_arcing",
+        "name": "Arcing",
+        "description": "This weapon can be fired over obstacles, usually by lobbing a projectile in an arc. Attacks made with this weapon don’t require line of sight, as long as it’s possible to trace a path to the target; however, they are still affected by cover."
+      },
+      {
+        "id": "tg_loading",
+        "name": "Loading",
+        "description": "This weapon must be reloaded after each use. Mechs can reload with Stabilize and some systems."
+      }
+    ]
+  },
+  {
+    "id": "7e346222-9473-46b0-a1ae-499ed8643318",
+    "name": "\"로마의 꿈\" 유탄발사기 \"Roman Dream\" grenade launcher",
+    "source": "EM",
+    "license": "Lucius 루키우스 ",
+    "license_id": "15cf548b-bd30-4d1a-8892-e06fbf4429d8",
+    "license_level": 3,
+    "description": "",
+    "effect": "<div>이 무기는 추가 피해를 가할때, 모든 추가 피해 주사위가 1이 됩니다.</div><div>당신은 일반적인 장전 무기를 장전하듯이 이 무기를 장전할 수 있으며,이때 이 무기의 사용 횟수를 모두 회복합니다.</div>",
+    "mount": "Heavy",
+    "type": "Launcher",
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "on_attack": "<div>이 무기는 발사전 모든 사용횟수를 소모하고, 그 횟수만큼 공격해야 합니다.</div>",
+    "on_hit": "<div>이 무기로 한턴에 3번 적중당한 캐릭터는 이번 턴 종료시까지 파쇄 상태가 됩니다.</div>",
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": 3
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      },
+      {
+        "type": "Blast",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 3
+      },
+      {
+        "id": "tg_reliable",
+        "name": "Reliable {VAL}",
+        "description": "This weapon has some degree of self-correction or is simply powerful enough to cause damage even with a glancing blow. It always does {VAL} damage, even if it misses its target or rolls less damage. Reliable damage inherits other tags (such as AP) and base damage type but not tags that require a hit, such as Knockback.",
+        "val": 1
+      },
+      {
+        "id": "tg_arcing",
+        "name": "Arcing",
+        "description": "This weapon can be fired over obstacles, usually by lobbing a projectile in an arc. Attacks made with this weapon don’t require line of sight, as long as it’s possible to trace a path to the target; however, they are still affected by cover."
+      },
+      {
+        "id": "tg_inaccurate",
+        "name": "Inaccurate",
+        "description": "Attacks made with this weapon receive +1 Difficulty."
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ]
+  },
+  {
+    "id": "be5196c6-44d7-47e9-8744-df0e5b4a46f1",
+    "name": "\"플린트락\" 1회용 대포 \"Flintlock\" Disposable Cannon",
+    "source": "OEG",
+    "license": "모건 Morgan",
+    "license_id": "be1defb8-b050-4424-9e8d-ec0771ebddb8",
+    "license_level": 1,
+    "description": "<div>The Flintlock is a fire-and-forget cannon built off a power cell rigged to explosively discharge, which is then freely discarded. Dead simple in construction and requiring almost no mounting, these are popular as a backup anti-armor weapons for infantry units, and are sometimes used by mechs as an additional disposable weapon.</div>",
+    "mount": "Auxiliary",
+    "type": "Cannon",
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": 3
+      }
+    ],
+    "range": [
+      {
+        "type": "Line",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 4
+      },
+      {
+        "id": "tg_heat_self",
+        "name": "Heat {VAL} (Self)",
+        "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+        "val": 1
+      }
+    ]
+  },
+  {
+    "id": "5b301470-4790-4738-a789-58373716f134",
+    "name": "HSS-025 \"무단횡단자\" 산탄총 HSS-025 \"Jaywalker\" Shotgun",
+    "source": "OEG",
+    "license": "모건 Morgan",
+    "license_id": "be1defb8-b050-4424-9e8d-ec0771ebddb8",
+    "license_level": 1,
+    "description": "<div>Cheekily named Jaywalker by marines who are issued the weapon, the HSS-025 is a simple semi-automatic shotgun using repurposed cannon barrels. Accepting buckshot and slugs, the Jaywalker is an overpowered package crammed into a small firearm, with a habit of leaping out of a user's hand if not properly braced or mounted on a chassis as an auxiliary near threat deterrence weapon.</div>",
+    "mount": "Auxiliary",
+    "type": "CQB",
+    "sp": 0,
+    "effect": "<div>이 무기는 교전시 원거리 패널티를 무시하고, 인접한 대상을 공격해 적중하면 추가로 2칸 넉백합니다.</div>",
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 3
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_knockback",
+        "name": "Knockback {VAL}",
+        "description": "On a hit, the user may choose to knock their target {VAL} spaces in a straight line directly away from the point of origin (e.g., the attacking mech or the center of a Blast). Multiple Knockback effects stack with each other. This means that an attack made with a Knockback 1 weapon and a talent that grants Knockback 1 counts as having Knockback 2.",
+        "val": 1
+      }
+    ]
+  },
+  {
+    "id": "fec1c0b7-9076-4592-b166-e262737ed1b0",
+    "name": "HSS-100 \"약탈자\" 산탄총 HSS-100 \"Reaver\" Shotgun",
+    "source": "OEG",
+    "license": "모건 Morgan",
+    "license_id": "be1defb8-b050-4424-9e8d-ec0771ebddb8",
+    "license_level": 3,
+    "description": "<div>Created for those who felt the HSS-075 traded too much of the Daisy Cutter’s power for control, the HSS-100 brought back much of that capability by replacing the Flayer’s barrel and extended magazine with a larger 100mm reinforced barrel and breech-loading mechanism. While standard scatter-shells are provided as a baseline, more advanced sabot or airburst ammunition may be requested.</div>",
+    "mount": "Main",
+    "type": "CQB",
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Cone",
+        "val": 5
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_loading",
+        "name": "Loading",
+        "description": "This weapon must be reloaded after each use. Mechs can reload with Stabilize and some systems."
+      },
+      {
+        "id": "tg_inaccurate",
+        "name": "Inaccurate",
+        "description": "Attacks made with this weapon receive +1 Difficulty."
+      }
+    ]
+  },
+  {
+    "id": "0914bdae-7356-482c-9631-18dd5fa6e558",
+    "name": "디도스 넥서스 DDoS Nexus",
+    "source": "EXOTIC",
+    "license": "",
+    "license_id": "",
+    "license_level": 1,
+    "description": "<div>이 무기 내부에는 단순한 접속 신호를 보내는 시스템이 내장되어 있습니다. 공격이 적중했을때, 기체에 박혀 내부 프로그램에 무수한 접속 시도를 통해 다른 대처 방법을 수행할 수 없게 만듭니다.</div>",
+    "mount": "Auxiliary",
+    "type": "Nexus",
+    "sp": 0,
+    "effect": "<div>이 무기는 대상이 락온을 가지고 있다면, 락온을 소모하지 않고 락온 효과를 받을 수 있습니다.</div>",
+    "barrage": true,
+    "skirmish": true,
+    "on_hit": "<div>대상은 다음 대상의 턴 종료시까지 모든 시스템 내성 굴림에 +1 난이도를 받고, 대상을 향한 모든 해킹 공격에 +1 정확도를 부여합니다. 이 효과는 중첩됩니다.</div>",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": 1
+      },
+      {
+        "type": "Heat",
+        "val": 1
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_smart",
+        "name": "Smart",
+        "description": "This weapon has self-guidance systems, self-propelled projectiles, or even nanorobotic ammunition. These systems are effective enough that its attacks can’t simply be dodged – they must be scrambled or jammed. Because of this, all attacks with this weapon – including melee and ranged attacks – use the target’s E-Defense instead of Evasion. Targets with no E-Defense count as having 8 E-Defense."
+      },
+      {
+        "id": "tg_exotic",
+        "name": "Exotic Gear",
+        "description": "EXOTIC GEAR is a general tag for equipment that exists outside the traditional licensing system.",
+        "filter_ignore": true
+      }
+    ]
+  },
+  {
+    "id": "b57a052d-425b-4ee4-9bc4-17097f8ba006",
+    "name": "삼중점 Triple Point",
+    "source": "EXOTIC",
+    "license": "",
+    "license_id": "",
+    "license_level": 1,
+    "description": "",
+    "mount": "Main",
+    "type": "Nexus",
+    "sp": "1",
+    "effect": "<div>이 무기는 최대 3개의 객체에게 공격을 가할 수 있습니다. 각 공격과 피해 굴림을 일반적인 방법대로 수행하지만, 이 중 단 하나만 실제로 적중할 수 있습니다. 당신은 3개의 공격중 하나를 선택해야 합니다.</div><div>나머지 두 공격은 일어나지 않은것으로 취급되며, 피해 처리, 락온 소모, 효과 등등 모두 이전의 상태로 롤백됩니다. 또한 이 무기는 여럿을 대상으로 공격하는 것으로 취급하지 않습니다. 반응 행동들은 당신이 진짜 공격을 선택하기 전에 선언해야 하지만, 실제로 발동되는 반응 행동은 적중한 공격에 대한 반응 행동이고, 나머지들은 수행하지 않습니다. (발동하지 않은것으로 취급)</div><div>이 3 공격 모두 첫 공격 굴림으로 취급합니다.</div><div>This weapon makes three attacks at once, each of which must be against a different target. Attack and damage rolls are made normally, but only one of these attacks actually happens; you choose which.<br>The other two attacks don’t happen; damage isn’t dealt, Lock On isn’t consumed, effects are not triggered and the attack does not count as multi-target. Reactions to each attack must be declared before you decide which one is real, but only trigger if they apply to the real attack.<br>For the purposes of talents, systems and core bonuses that apply only once a round or activate on the first attack of a round, all three attacks qualify.</div>",
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_smart",
+        "name": "Smart",
+        "description": "This weapon has self-guidance systems, self-propelled projectiles, or even nanorobotic ammunition. These systems are effective enough that its attacks can’t simply be dodged – they must be scrambled or jammed. Because of this, all attacks with this weapon – including melee and ranged attacks – use the target’s E-Defense instead of Evasion. Targets with no E-Defense count as having 8 E-Defense."
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_exotic",
+        "name": "Exotic Gear",
+        "description": "EXOTIC GEAR is a general tag for equipment that exists outside the traditional licensing system.",
+        "filter_ignore": true
+      }
+    ]
+  },
+  {
+    "id": "f5527be8-ac0a-45a0-bea1-96f7f10d6c85",
+    "name": "스토커 피스톨 Stalker Pistol",
+    "source": "EM",
+    "license": "Rōmulus/Remus 로물루스/레무스",
+    "license_id": "1d4662a2-0ef8-4081-aab8-41c0913dee26",
+    "license_level": 2,
+    "description": "",
+    "effect": "<div>이 무기는 아군을 대상으로 할 수 있습니다. 그러하다면 자동으로 적중하며, 피해를 주지 않습니다.</div>",
+    "mount": "Auxiliary",
+    "type": "CQB",
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "on_hit": "<div>대상은 다음 당신의 턴 종료시까지 당신의 시야와 센서안에 있는 것으로 취급합니다.</div>",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_smart",
+        "name": "Smart",
+        "description": "This weapon has self-guidance systems, self-propelled projectiles, or even nanorobotic ammunition. These systems are effective enough that its attacks can’t simply be dodged – they must be scrambled or jammed. Because of this, all attacks with this weapon – including melee and ranged attacks – use the target’s E-Defense instead of Evasion. Targets with no E-Defense count as having 8 E-Defense."
+      }
+    ]
+  },
+  {
+    "id": "52f8ab8c-da09-423c-ae45-570399c3588f",
+    "name": "페레그린 추적 글레이브 Peregrine Seeker Glaive",
+    "source": "C&H",
+    "license": "사브뢰르 SABREUR",
+    "license_id": "54939565-2af3-44e9-b506-9f591d1db635",
+    "license_level": 1,
+    "description": "<div><span>In formal mech duels, ranged armaments are often strictly prohibited with participants being restricted to melee weaponry only. The result of enterprising duelists looking to exploit this particular loophole, the Peregrine seeker glaive is a deceptively sophisticated combat knife, each blade a self-contained smart weapon system with independent throw-and-forget target tracking and course correction capabilities allowing it to land effective hits from seemingly impossible angles. Every seeker glaive is neuro-coded to prevent thrown blades from being turned back against their user.</span></div>",
+    "effect": "<div>인접하지 않은 대상에게 공격하면, 이 무기는 추적을 얻고 1d3+2 피해를 대신 가합니다.</div>",
+    "mount": "Auxiliary",
+    "type": "Melee",
+    "sp": "1",
+    "tags": [
+      {
+        "id": "tg_thrown",
+        "name": "Thrown {VAL}",
+        "description": "This melee weapon can be thrown at targets within {VAL} spaces. Thrown attacks follow the rules for melee attacks but are affected by cover; additionally, a thrown weapon comes to rest in an adjacent space to its target and must be retrieved as a free action while adjacent to that weapon before it can be used again.",
+        "val": 5
+      }
+    ],
+    "profiles": [
+      {
+        "name": "근접 공격 Melee Attack",
+        "barrage": true,
+        "skirmish": true,
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": 2
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 1
+          }
+        ]
+      },
+      {
+        "name": "추적 공격 Seeking Attack",
+        "barrage": true,
+        "skirmish": true,
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d3+2"
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 1
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_seeking",
+            "name": "Seeking",
+            "description": "This weapon has a limited form of self-guidance and internal propulsion, allowing it to follow complicated paths to its targets. As long as it’s possible to draw a path to its target, this weapon ignores cover and doesn’t require line of sight."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c55ecdc9-198a-48ab-b93c-4565a5d7c8de",
+    "name": "스마트블레이드 SmartBlade",
+    "source": "C&H",
+    "license": "사브뢰르 SABREUR",
+    "license_id": "54939565-2af3-44e9-b506-9f591d1db635",
+    "license_level": 2,
+    "description": "<div><span>A pinnacle of modern materials engineering and elegant design, the smartblade appears deceptively lightweight and slender for a mech-scale melee weapon, but the blade itself is forged from an advanced polymorphic metamaterial alloy reinforced by a electromagnetic control field. Onboard expert systems tied directly into the mech's sensor array are capable of adjusting the blade's structure in real-time for optimum performance against designated targets. Inexperienced users often complain that the weapon seems to fight against their input, and C&amp;H offers a complimentary familiarization and training sim package to all license holders.</span></div>",
+    "effect": "<div>락온을 소모하고 공격하면, 이 무기의 피해값이 1d6+3 AP 물리 피해가 됩니다.</div>",
+    "mount": "Main",
+    "type": "Melee",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_smart",
+        "name": "Smart",
+        "description": "This weapon has self-guidance systems, self-propelled projectiles, or even nanorobotic ammunition. These systems are effective enough that its attacks can’t simply be dodged – they must be scrambled or jammed. Because of this, all attacks with this weapon – including melee and ranged attacks – use the target’s E-Defense instead of Evasion. Targets with no E-Defense count as having 8 E-Defense."
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ],
+    "profiles": [
+      {
+        "name": "기본 공격 Basic Attack",
+        "barrage": true,
+        "skirmish": true,
+        "damage": [
+          {
+            "val": 3,
+            "type": "Kinetic"
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 1
+          }
+        ]
+      },
+      {
+        "name": "락온 공격 Lock On Attack",
+        "barrage": true,
+        "skirmish": true,
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6+3"
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 1
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_ap",
+            "name": "Armor-Piercing (AP)",
+            "description": "Damage dealt by this weapon ignores Armor."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "smallFusion CutterFusion Cutter",
+    "name": "\"엄\" 핵융합 절단기 \"UM\" Fusion Cutter",
+    "source": "",
+    "license": "",
+    "license_id": "",
+    "license_level": 1,
+    "description": "",
+    "effect": "<div>이 무기는 사용하고 나서 무기의 연료봉을 사출시킬 수 있습니다. 그리하면 휴식전까지 사용할 수 없게 되지만, 자가 열을 무시할 수 있습니다.</div><div>만약 한랭지라면, 이 무기의 연료봉 사출시키지 않아도 자가 열을 무시합니다.</div><div>지형이나 물체를 대상으로 할때, 공격 굴림을 굴리지 않고 자동으로 20 AP 피해를 가합니다.</div>",
+    "mount": "Main",
+    "type": "Melee",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "name": "Heat {VAL} (Self)",
+        "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+        "val": 3
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3"
+      },
+      {
+        "type": "Burn",
+        "val": 2
+      },
+      {
+        "type": "Heat",
+        "val": 2
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ]
+  }
+]

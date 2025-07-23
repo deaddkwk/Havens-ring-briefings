@@ -1,0 +1,32 @@
+[
+  {
+    "id": "EM",
+    "name": "EMpire Arms",
+    "light": "#739B4D",
+    "dark": "#012400",
+    "logo_url": "https://raw.githubusercontent.com/massif-press/compcon/master/public/static/img/logo/barony.svg",
+    "quote": "<div><em>기술을 모아 세계로.</em></div><div><em>세계를 모아 제국으로.</em></div><div><strong>제국에 영광 있기를.</strong></div>",
+    "description": "<div></div>"
+  },
+  {
+    "id": "OEG",
+    "name": "ONE EYED GIANT",
+    "light": "#FF0000",
+    "dark": "#000000",
+    "logo_url": "https://raw.githubusercontent.com/foundryvtt/dnd5e/refs/heads/4.3.x/icons/svg/damage/poison.svg"
+  },
+  {
+    "id": "C&H",
+    "name": "CHANDRASEKHAR & HERSCHEL",
+    "light": "#00C800",
+    "dark": "#006400",
+    "logo_url": "https://www.dropbox.com/s/5g6vhwjeojhq61b/c%26h.svg?raw=1"
+  },
+  {
+    "id": "FFT",
+    "name": "Far Field Team",
+    "light": "#0089FF",
+    "dark": "#330083",
+    "logo_url": "https://raw.githubusercontent.com/deaddkwk/lancer-briefings/refs/heads/master/public/part-2-of-my-own-interpretation-of-lancer-faction-emblems-v0-34xbk8bytxxb1-removebg-preview.png"
+  }
+]
