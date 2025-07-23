@@ -3,17 +3,17 @@
   "planetPath": "/planet.webm",
   "animate": true,
   "defaultTitle": "MSMC |",
-  "icon": "/faction-logos/msmc.svg",
+  "icon": "/faction-logos/albatross.svg",
   "header": {
-    "planet": "Heiligtum-6 'Deep Blue'",
-    "year": "5017u",
-    "system": "Heiligtum",
-    "gate": "Rào Cỏ",
-    "ring": "Annamite",
-    "headerTitle": "Mirrorsmoke",
-    "headerSubtitle": "Mercenary Company",
-    "subheaderTitle": "Contract Work",
-    "subheaderSubtitle": "Sierra-Whiskey-Alpha-Golf"
+    "planet": "헤븐즈링 베이스'",
+    "year": "5016u",
+    "system": "연방 게이트 정거장",
+    "gate": "HORUS-918",
+    "ring": "아반젤로-998",
+    "headerTitle": "헤븐즈링",
+    "headerSubtitle": "용병단",
+    "subheaderTitle": "브리핑 콘솔",
+    "subheaderSubtitle": "시에라-위스키-알파-골프"
   },
   "pilotSpecialInfo": {}
 }
