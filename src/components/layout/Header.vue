@@ -21,25 +21,25 @@
 			<div class="location-info">
 				<div id="planet-year" class="location-row">
 					<div id="year">
-						<h4>Year</h4>
+						<h4>년도</h4>
 						<span class="subtitle">{{ header.year }}</span>
 					</div>
 					<div id="planet">
-						<h4>Deployment Info</h4>
+						<h4>배치 정보</h4>
 						<span class="subtitle">{{ header.planet }}</span>
 					</div>
 				</div>
 				<div id="system-gate-ring" class="location-row">
 					<div id="ring">
-						<h4>Ring</h4>
+						<h4>링</h4>
 						<span class="subtitle">{{ header.ring }}</span>
 					</div>
 					<div id="gate">
-						<h4>Gate</h4>
+						<h4>게이트</h4>
 						<span class="subtitle">{{ header.gate }}</span>
 					</div>
 					<div id="system">
-						<h4>System</h4>
+						<h4>시스템</h4>
 						<span class="subtitle">{{ header.system }}</span>
 					</div>
 				</div>

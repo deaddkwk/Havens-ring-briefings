@@ -11,15 +11,15 @@
 			  open>
 				<router-link class="clipped-bottom-right" to="/status">
 					<img src="/icons/orbital.svg" />
-					<span>Status</span>
+					<span>상태</span>
 				</router-link>
 				<router-link class="clipped-bottom-right" to="/pilots">
 					<img src="/icons/pilot.svg" />
-					<span>Pilots</span>
+					<span>파일럿</span>
 				</router-link>
 				<router-link class="clipped-bottom-right" to="/events">
 					<img src="/icons/events.svg" />
-					<span>Logs</span>
+					<span>로그</span>
 				</router-link>
 			</o-sidebar>
 		</section>
