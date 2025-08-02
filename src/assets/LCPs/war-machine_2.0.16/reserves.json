@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ADDKITcontainerR1",
+    "name": "(랭크 1) 추가 장비 컨테이너 ADDKIT container",
+    "type": "Mech",
+    "description": "<div>1/임무, 다음 중 하나를 선택할 수 있습니다.</div><div>-특정 제한 무기 또는 시스템의 사용 횟수를 추가로 2번 얻습니다.</div><div>-수리 한계치를 +2 합니다.</div><div>-이 장면 종료시까지 HASE 중 하나의 판정과 내성에 +1 정확도를 받습니다.</div>",
+    "label": "ADDKIT container",
+    "consumable": true,
+    "actions": [
+      {
+        "name": "신속 보급 Quick supply",
+        "activation": "Free",
+        "detail": "<div>1/임무, 다음 중 하나를 선택할 수 있습니다.</div><div>-특정 제한 무기 또는 시스템의 사용 횟수를 추가로 2번 얻습니다.</div><div>-수리 한계치를 +2 합니다.</div><div>-이 장면 종료시까지 HASE 중 하나의 판정과 내성에 +1 정확도를 받습니다.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  }
+]

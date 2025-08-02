@@ -705,5 +705,70 @@
     "type": "System",
     "sp": "1",
     "description": ""
+  },
+  {
+    "id": "Aquasherpaequep",
+    "name": "대왕쥐가오리 드론 Manta ray Drone",
+    "source": "FFT",
+    "license": "셰르파 Sherpa",
+    "license_id": "SherpaSherpaSherpa",
+    "license_level": 3,
+    "effect": "<div>만약 이 시스템의 장착자가 셰르파라면, 사용 횟수가 1회 증가합니다.</div><div><span>빠른 행동으로, 사용횟수 1회를 소모하고 대왕쥐가오리 드론을 인접한 칸에 배치합니다.</span></div>",
+    "type": "Drone",
+    "sp": "2",
+    "description": "<div></div>",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 2
+      }
+    ],
+    "deployables": [
+      {
+        "name": "대왕쥐가오리 드론 Manta ray Drone",
+        "type": "Drone",
+        "detail": "<div>당신의 턴 시작시마다, 다음 행동을 원하는 순서대로 수행합니다.</div><ul><li><div>3칸 이동합니다. 이때 <span>진공 상태나 저중력 상태, 수중 상태로 인해 감속되지 않습니다.</span></div></li><li><div><span>인접한 적대적인 캐릭터 하나를 선택합니다. 당신은 자유 행동으로 대상을 락온하거나 스캔할 수 있습니다.</span></div></li></ul><div><span>장면 종료시, 배치된 대왕쥐가오리 드론은 작동을 정지하고 파괴됩니다.</span></div>",
+        "size": 0.5,
+        "activation": "Quick",
+        "deactivation": "",
+        "recall": "",
+        "redeploy": "",
+        "instances": 1,
+        "cost": 1,
+        "armor": "",
+        "hp": "5",
+        "evasion": "10",
+        "edef": "12",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "3",
+        "pilot": false,
+        "mech": false
+      }
+    ]
+  },
+  {
+    "id": "SpaceSherpaSpaceSherpasutstem",
+    "name": "스타플레어 영역 생성기 Starflare Field generator",
+    "source": "FFT",
+    "license": "셰르파 Sherpa",
+    "license_id": "SherpaSherpaSherpa",
+    "license_level": 3,
+    "effect": "<div>만약 이 시스템의 장착자가 셰르파라면, SP 를 1점 덜 소모합니다.</div><div>자신의 턴 종료시마다, 자신에게 방출 범위 1의 빛의 장막을 만들거나, 이미 빛의 장막이 있다면 이 장막의 방출 범위를 2 증가시킵니다(최대 5).</div><div>방출 범위 안의 자신과 우호적인 캐릭터는 절반 엄폐를 얻습니다.</div><div>만약 자신이 피해를 입으면, 이 빛의 장막은 사라집니다.</div>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_shield",
+        "name": "Shield",
+        "description": "This system is an energy shield of some kind."
+      }
+    ]
   }
 ]

@@ -140,7 +140,7 @@ import nrfawData from 'lancer-nrfaw-data'
 import longrimData from 'lancer-longrim-data'
 
 import wallflowerData from '@/assets/LCPs/wallflower-data-2.0.5'
-import warmachineData from '@/assets/LCPs/war-machine_2.0.15f'
+import warmachineData from '@/assets/LCPs/war-machine_2.0.16'
 import osrdata from '@/assets/LCPs/osr-data-1.2.0'
 import dustgravedata from '@/assets/LCPs/dustgrave-data-1.4.0'
 

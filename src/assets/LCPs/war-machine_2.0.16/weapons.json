@@ -56,7 +56,6 @@
         "barrage": true,
         "skirmish": true,
         "cost": "1",
-        "on_hit": "<div></div>",
         "damage": [
           {
             "type": "Kinetic",
@@ -94,9 +93,7 @@
             "name": "UNIQUE",
             "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
           }
-        ],
-        "on_attack": "<div></div>",
-        "on_crit": "<div></div>"
+        ]
       },
       {
         "name": "고열 츠바이헨더 (방열 모드) Heat Zweihänder (Radiation mode)",
@@ -710,6 +707,51 @@
       {
         "type": "Threat",
         "val": 1
+      }
+    ]
+  },
+  {
+    "id": "coldSherpacoldSherpacoldSherpacoldSherpasystme",
+    "name": "고드름 런처 icicle launcher",
+    "source": "FFT",
+    "license": "셰르파 Sherpa",
+    "license_id": "SherpaSherpaSherpa",
+    "license_level": 3,
+    "description": "<div></div>",
+    "effect": "<div>만약 이 시스템의 장착자가 셰르파라면, 추적 태그를 얻습니다.</div>",
+    "mount": "Auxiliary",
+    "type": "Launcher",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_ap",
+        "name": "Armor-Piercing (AP)",
+        "description": "Damage dealt by this weapon ignores Armor."
+      },
+      {
+        "id": "tg_arcing",
+        "name": "Arcing",
+        "description": "This weapon can be fired over obstacles, usually by lobbing a projectile in an arc. Attacks made with this weapon don’t require line of sight, as long as it’s possible to trace a path to the target; however, they are still affected by cover."
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "on_hit": "<div>대상이 이동불가 상태거나 넘어짐 상태라면, 피해량이 4이 됩니다.</div>",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": 1
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
       }
     ]
   }
